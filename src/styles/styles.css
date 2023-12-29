@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.bg-gradient-dark-red {
+    background: -webkit-linear-gradient(180deg, #7D0A0A 0%, #520606 100%);
+    background: linear-gradient(180deg, #7D0A0A 0%, #520606 100%);
+}
+
+.bg-gradient-red {
+    background: -webkit-linear-gradient(180deg, #BF3131 0%, #9c2727 100%);
+    background: linear-gradient(180deg, #BF3131 0%, #9c2727 100%);
+}
+
+.orange-tag {
+    color: #edb03e;
+}
+
+.red-tag {
+    color: #b74444;
+}
+
+.blue-tag {
+    color: #3e9bed;
+}
+
+.purple-tag {
+    color: #a13ed1;
+}
+
+.pink-tag {
+    color: #ed3e9b;
+}
