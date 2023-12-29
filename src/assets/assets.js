@@ -1,4 +1,4 @@
-import github from "./github.png";
+import github from "./tech/github.png";
 
 import memory from "./projects/memory.png";
 import bank from "./projects/bank.png";
@@ -24,13 +24,7 @@ import logo from './logo.png';
 
 
 export {
-  backend,
-  database,
-  software,
-  frontend,
   github,
-  menu,
-  close,
   memory,
   bank,
   logo,
