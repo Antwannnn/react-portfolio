@@ -88,7 +88,7 @@ const NavBar = () => {
         <nav className="flex h-full flex-col items-center justify-center">
           <div className="flex justify-center-center py-10">
             <NavLink path="/" className="opacity-70 hover:opacity-100 transition-opacity duration-300" onClick={() => { navigate("/") }}>
-              <img className="w-[60px]" src={logo} alt="" />
+              <img className="w-[80px]" src={logo} alt="" />
             </NavLink>
           </div>
           <ul className="flex flex-col w-full">
