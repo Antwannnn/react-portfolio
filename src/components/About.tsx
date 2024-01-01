@@ -6,7 +6,7 @@ import { TransitionDiv } from '../Motion/MotionElements'
 const About = () => {
   return (
     <TransitionDiv className="about">
-
+        
     </TransitionDiv>
   );
 };

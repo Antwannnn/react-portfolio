@@ -23,6 +23,7 @@ import reactjs from "./tech/reactjs.png";
 import typescript from "./tech/typescript.png";
 
 import logo from './logo.png';
+import photo from './photo.jpg';
 
 
 export {
@@ -32,6 +33,7 @@ export {
   menu,
   close,
   logo,
+  photo,
   horrorgame,
   tailwind,
   git,

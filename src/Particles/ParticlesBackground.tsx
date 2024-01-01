@@ -12,62 +12,80 @@ const ParticlesBackground = ({ children }: React.PropsWithChildren<{}>) => {
         <Particles
           id="tsparticles"
           init={particlesInit}
-          options={{
-            fullScreen: {
-              enable: true,
-              zIndex: 0
-            },
-            fpsLimit: 60,
-            interactivity: {
-              events: {
-                onClick: { enable: true, mode: "push" },
-                onHover: {
-                  enable: true,
-                  mode: "repulse",
-                  parallax: { enable: false, force: 60, smooth: 10 }
-                },
-                resize: true
-              },
-              modes: {
-                push: { quantity: 4 },
-                repulse: { distance: 200, duration: 0.4 }
-              }
-            },
+          options= {{
+            
             particles: {
-              color: { value: "#ffffff" },
+              color: {
+                value: "#FF0000",
+                animation: {
+                  enable: true,
+                  speed: 10
+                }
+              },
+              effect: {
+                type: "trail",
+                options: {
+                  trail: {
+                    length: 50,
+                    minWidth: 4
+                  }
+                }
+              },
               move: {
                 direction: "none",
                 enable: true,
-                outModes: "out",
+                outModes: {
+                  default: "destroy"
+                },
+                path: {
+                  clamp: false,
+                  enable: true,
+                  delay: {
+                    value: 0
+                  },
+                  generator: "polygonPathGenerator",
+                  options: {
+                    sides: 6,
+                    turnSteps: 30,
+                    angle: 30
+                  }
+                },
                 random: false,
-                speed: 1,
+                speed: 3,
                 straight: false
               },
               number: {
-                density: {
-                  enable: true,
-                  area: 600
-                },
-                value: 80
+                value: 0
               },
               opacity: {
-                value: {
-                  min: 0,
-                  max: 0.4
-                }
+                value: 1
               },
               shape: {
-                type: "image",
-                image: {
-                  src: "", // Chemin vers votre image de cœur
-                }
+                type: "circle"
               },
               size: {
-                value: { min: 2, max: 8 }
+                value: 2
+              }
+            },
+            fullScreen: {
+              zIndex: 0
+            },
+            emitters: {
+              direction: "none",
+              rate: {
+                quantity: 1,
+                delay: 0.25
+              },
+              size: {
+                width: 0,
+                height: 0
+              },
+              position: {
+                x: 50,
+                y: 50
               }
             }
-          }
-          }
+          }}
         />
         {children}
       </div>

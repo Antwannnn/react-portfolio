@@ -5,7 +5,6 @@ import { TransitionDiv } from '../Motion/MotionElements'
 const Contact = () => {
     return (
         <TransitionDiv className="contact">
-
         </TransitionDiv>
     );
 };

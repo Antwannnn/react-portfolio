@@ -73,14 +73,14 @@ const NavBar = () => {
       appear.start('hidden');
       setIsMenuOpen(false);
     }
-  }, [isTabletOrMobile])
+  }, [isTabletOrMobile, appear])
 
   return (
     <>
-      <button className="sm:hidden cursor-pointer z-10 absolute left-3 top-1 opacity-75" onClick={() => toggleMenu()}>
+      <button className="sm:hidden cursor-pointer z-30 absolute left-3 top-1 opacity-75" onClick={() => toggleMenu()}>
         <img className="w-[30px] h-[30px]" src= {isMenuOpen ? close : menu} alt="" />
       </button>
-      <motion.div className={`h-full w-44 bg-darkcherryred bg-opacity-40`}
+      <motion.div className={`h-full min-w-56 absolute sm:relative bg-darkcherryred bg-opacity-60 z-20`}
       initial= {'hidden'}
       variants={appearVariants}
       animate={appear}
@@ -97,8 +97,8 @@ const NavBar = () => {
                 <NavLink
                   path={link.path}
                   label={link.name}
-                  className='text-secondary text-md w-full border-y-[1px] py-1 border-opacity-0 border-secondary hover:text-primary hover:border-primary transition-color duration-300 opacity-60'
-                  activeStyle="text-primary border-opacity-100"
+                  className='text-primary text-md w-full border-y-[1px] py-1 border-opacity-0 border-secondary hover:text-primary hover:border-primary transition-color duration-300 opacity-75'
+                  activeStyle="border-opacity-100"
                   onClick={() => {
                     navigate(link.path);
                   }}
