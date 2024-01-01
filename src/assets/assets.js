@@ -4,6 +4,8 @@ import memory from "./projects/memory.png";
 import bank from "./projects/bank.png";
 import horrorgame from "./projects/horrorgame.png";
 
+import menu from "./menu.svg";
+import close from "./close.svg";
 
 import tailwind from "./tech/tailwind.svg";
 import git from "./tech/git.png";
@@ -27,6 +29,8 @@ export {
   github,
   memory,
   bank,
+  menu,
+  close,
   logo,
   horrorgame,
   tailwind,

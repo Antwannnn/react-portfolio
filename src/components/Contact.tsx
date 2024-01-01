@@ -4,7 +4,7 @@ import { TransitionDiv } from '../Motion/MotionElements'
 
 const Contact = () => {
     return (
-        <TransitionDiv>
+        <TransitionDiv className="contact">
 
         </TransitionDiv>
     );

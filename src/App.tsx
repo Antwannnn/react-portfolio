@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, NavLink, } from 'react-router-dom';
 import { Home, About, Skills, Experiences, Projects, Contact, NavBar } from './components/Components';
 import ParticlesBackground from "./Particles/ParticlesBackground";
 import './styles/styles.css';
