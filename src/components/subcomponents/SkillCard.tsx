@@ -1,4 +1,7 @@
 import React from "react";
+import { FromTopDiv } from "../../Motion/MotionElements";
+import { motion } from "framer-motion";
+import { useAnimation } from "framer-motion";
 import '../../styles/card.css';
 
 type Tech = {
@@ -13,24 +16,43 @@ type SkillCardProps = {
     level?: number;
 }
 
-const SkillCard: React.FC<SkillCardProps> = ({ tech = { name: 'None', img: './images/skills/default' }, description = 'None', color = '#ffffff', level = 0 }) => {
+const SkillCard: React.FC<SkillCardProps> = ({ tech = { name: 'None', img: './images/skills/default' }, description = 'None', color = '', level = 0 }) => {
+
+    const controls = useAnimation();
+
+    const ProgressBarVariants = {
+        hidden: {
+            width: 0,
+        },
+        visible: {
+            width: level + '%',
+            transition: {
+                duration: 2,
+                type: 'spring',
+                bounce: 0.2
+            }
+        }
+    }
+
     return (
-        <div className="card-inner w-44 h-full flex justify-center items-center">
-            <div className="">
-                    <img className="w-28 opacity-60" src={tech.img} alt={tech.name} />
-                <div className="card-content">
+        <motion.div className="card-inner w-44 h-full flex justify-center items-center" onHoverStart={() => controls.start('visible')}
+            onHoverEnd={() => controls.start('hidden')}>
+            <div className="flex w-4/6 justify-center flex-col items-center">
+                <img className="w-20 opacity-60" src={tech.img} alt={tech.name} />
+                <div className="flex flex-col items-center gap-5 w-full">
                     <div className="text-secondary text-center text-xl">
                         <h3>{tech.name}</h3>
                     </div>
-                    <div className="card-description">
-                        
-                    </div>
-                    <div className="card-level">
-                        <div className="level" style={{ backgroundColor: color, width: `${level}%` }}></div>
+                    <div className="h-[3px] w-full bg-opacity-30 bg-[#383838]">
+                        <motion.div
+                            initial={'hidden'}
+                            animate={controls}
+                            variants={ProgressBarVariants}
+                            className={`level h-full opacity-40`} style={{ background: `${color}` }}></motion.div>
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

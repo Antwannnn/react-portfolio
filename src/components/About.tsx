@@ -1,17 +1,19 @@
 import PersonalTimeline from "../components/subcomponents/Timeline";
+import { useNavigate } from "react-router-dom";
 import { TransitionDiv, FromBottomDiv, FromTopDiv } from '../Motion/MotionElements'
 import { useMediaQuery } from "react-responsive";
 import { curriculum } from '../constants/infos';
 
 const About = ({ onEnter, onExit }: any) => {
 
+  const navigate = useNavigate();
   const isVertical = useMediaQuery({ query: '(max-width: 900px)' })
 
   return (
     <FromTopDiv transition={{ duration: 0.5, delay: 0.5, type: 'spring' }}
       onViewportEnter={onEnter}
       onViewportLeave={onExit}
-      className="text-primary z-10 w-full px-10 flex flex-col md:text-start gap-10 my-10 justify-evenly items-center"
+      className="text-primary z-10 w-full px-2 flex flex-col md:text-start gap-2 my-10 justify-evenly items-center"
     >
       <div className="w-4/6 text-center flex flex-col gap-6">
         <h1 className="text-2xl sm:text-5xl font-bold">À propos de moi</h1>
@@ -23,10 +25,10 @@ const About = ({ onEnter, onExit }: any) => {
         </p>
       </div>
       <TransitionDiv transition={{ delay: 1 }} className="separator w-5/6" />
-      <FromBottomDiv className="w-4/6 flex flex-col justify-center gap-1 items-center" transition={{ duration: 0.5, delay: 1.5, type: 'spring' }}>
+      <FromBottomDiv className="w-4/6 flex flex-col justify-center gap-6 items-center" transition={{ duration: 0.5, delay: 1.5, type: 'spring' }}>
         <h2 className="text-2xl text-secondary">Mon cursus</h2>
         <PersonalTimeline items={curriculum} orientation={`${isVertical ? "vertical" : "horizontal"}`}/>
-
+        <button className="button-red w-fit px-5 py-3" onClick={() => navigate("/skills")}>Mes compétences</button>
       </FromBottomDiv>
 
     </FromTopDiv>
