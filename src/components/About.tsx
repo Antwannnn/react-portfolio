@@ -23,7 +23,7 @@ const About = ({ onEnter, onExit }: any) => {
         </p>
       </div>
       <TransitionDiv transition={{ delay: 1 }} className="separator w-5/6" />
-      <FromBottomDiv className="w-4/6 flex flex-col justify-center gap-5 items-center" transition={{ duration: 0.5, delay: 1.5, type: 'spring' }}>
+      <FromBottomDiv className="w-4/6 flex flex-col justify-center gap-1 items-center" transition={{ duration: 0.5, delay: 1.5, type: 'spring' }}>
         <h2 className="text-2xl text-secondary">Mon cursus</h2>
         <PersonalTimeline items={curriculum} orientation={`${isVertical ? "vertical" : "horizontal"}`}/>
 

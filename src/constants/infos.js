@@ -38,16 +38,19 @@ const curriculum = [
     name: "Collège",
     date: "2015-2019",
     description: "Collège Leo-Ferré, Gourdon (46)",
+    image: Assets.lotdpt,
   },
   {
     name: "Baccalauréat spécialité SVT et LLCE Anglais",
     date: "2019 - 2022",
     description: "Lycée Leo-Ferré, Gourdon (46)",
+    image: Assets.lotdpt,
   },
   {
     name: "BUT Informatique",
     date: "2022 - 2025",
     description: "IUT de Blagnac, Blagnac (31)",
+    image: Assets.iutblagnac,
   },
 
 ]
@@ -70,6 +73,21 @@ const skills = [
     icon: Assets.javascript,
   },
   {
+    name: "Typescript",
+    level: 60,
+    icon: Assets.typescript,
+  },
+    {
+    name: "React",
+    level: 60,
+    icon: Assets.reactjs,
+  },
+  {
+    name: "Node JS",
+    level: 50,
+    icon: Assets.nodejs,
+  },
+  {
     name: "PHP",
     level: 50,
     icon: Assets.php,
@@ -90,21 +108,6 @@ const skills = [
     icon: Assets.c,
   },
   {
-    name: "React",
-    level: 60,
-    icon: Assets.reactjs,
-  },
-  {
-    name: "Node JS",
-    level: 50,
-    icon: Assets.nodejs,
-  },
-  {
-    name: "Typescript",
-    level: 60,
-    icon: Assets.typescript,
-  },
-  {
     name: "git",
     level: 60,
     icon: Assets.git,
@@ -120,9 +123,9 @@ const skills = [
     icon: Assets.ue,
   },
   {
-    name: "Oracle",
-    level: 20,
-    icon: Assets.oracle
+    name: "mySQL",
+    level: 50,
+    icon: Assets.mysql,
   }
 ]
 
