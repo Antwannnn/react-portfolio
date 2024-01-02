@@ -80,7 +80,7 @@ const NavBar = () => {
       <button className="sm:hidden cursor-pointer z-30 fixed left-3 top-1 opacity-75" onClick={() => toggleMenu()}>
         <img className="w-[30px] h-[30px]" src= {isMenuOpen ? close : menu} alt="" />
       </button>
-      <motion.div className={`min-h-full min-w-56 fixed sm:relative  bg-darkcherryred bg-opacity-60 z-20`}
+      <motion.div className={`min-h-full min-w-56 fixed sm:relative ${isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'} sm:pointer-events-auto bg-darkcherryred bg-opacity-60 z-20`}
       initial= {'hidden'}
       variants={appearVariants}
       animate={appear}

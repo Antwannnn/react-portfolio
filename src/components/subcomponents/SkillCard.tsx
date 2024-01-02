@@ -40,7 +40,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ tech = { name: 'None', img: './im
             <div className="flex w-4/6 justify-center flex-col items-center">
                 <img className="w-20 opacity-60" src={tech.img} alt={tech.name} />
                 <div className="flex flex-col items-center gap-5 w-full">
-                    <div className="text-secondary text-center text-xl">
+                    <div className="text-secondary opacity-75  text-center text-xl">
                         <h3>{tech.name}</h3>
                     </div>
                     <div className="h-[3px] w-full bg-opacity-30 bg-[#383838]">
