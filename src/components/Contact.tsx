@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { TransitionDiv } from '../Motion/MotionElements'
+import { FromBottomDiv, FromTopDiv } from "../Motion/MotionElements";
 
-const Contact = () => {
+const Contact = ({ onEnter, onExit } : any)=> {
     return (
-        <TransitionDiv className="contact">
-        </TransitionDiv>
+        <FromTopDiv className="contact" onViewportEnter={onEnter} onViewportLeave={onExit}>
+        </FromTopDiv>
     );
 };
 

@@ -1,13 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { FromLeftDiv, FromRightDiv } from "../Motion/MotionElements";
 import { useNavigate } from "react-router-dom";
 import { TransitionDiv } from '../Motion/MotionElements'
 
-const Projects = () => {
+const Projects = ({ onEnter, onExit }: any) => {
     return (
-        <TransitionDiv className="projects">
+        <FromLeftDiv className="projects" onViewportEnter={onEnter} onViewportLeave={onExit}>
 
-        </TransitionDiv>
+        </FromLeftDiv>
     );
 };
 

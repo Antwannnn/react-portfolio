@@ -33,6 +33,25 @@ const navLinks = [
   },
 ]
 
+const curriculum = [
+  {
+    name: "Collège",
+    date: "2015-2019",
+    description: "Collège Leo-Ferré, Gourdon (46)",
+  },
+  {
+    name: "Baccalauréat spécialité SVT et LLCE Anglais",
+    date: "2019 - 2022",
+    description: "Lycée Leo-Ferré, Gourdon (46)",
+  },
+  {
+    name: "BUT Informatique",
+    date: "2022 - 2025",
+    description: "IUT de Blagnac, Blagnac (31)",
+  },
+
+]
+
 const skills = [
 
   {
@@ -169,5 +188,5 @@ const projects = [
   },
 ];
 
-export { navLinks, skills, projects };
+export { navLinks, skills, projects, curriculum };
 

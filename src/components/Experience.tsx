@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { TransitionDiv } from '../Motion/MotionElements'
+import { FromTopDiv, FromBottomDiv } from '../Motion/MotionElements'
 
-const Experiences = () => {
+const Experiences = ({ onEnter, onExit }: any) => {
   return (
-    <TransitionDiv className="experiences">
+    <FromTopDiv className="experiences" onViewportEnter={onEnter} onViewportLeave={onExit}>
 
-    </TransitionDiv>
+    </FromTopDiv>
   );
 };
 

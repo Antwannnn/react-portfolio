@@ -12,7 +12,7 @@ const TransitionDiv: React.FC<MotionElementProps> = ({ children, className = '',
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4 }}
-      exit={{ opacity: 0 }}
+      exit={{ opacity: 0, transition: { duration: 0.4 } }}
       {...rest}
     >
       {children}
@@ -21,8 +21,6 @@ const TransitionDiv: React.FC<MotionElementProps> = ({ children, className = '',
 };
 
 const FromLeftDiv: React.FC<MotionElementProps> = ({ children, className = '', ...rest }) => {
-
-
   return (
       <motion.div
         className={`transition-div ${className}`}
@@ -55,9 +53,9 @@ const FromTopDiv: React.FC<MotionElementProps> = ({ children, className = '', ..
     <motion.div
       className={`transition-div ${className}`}
       initial={{ opacity: 0, y: -100 }}
+      {...rest}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -100, transition: { duration: 0.4 } }}
-      {...rest}
     >
       {children}
     </motion.div>
@@ -69,9 +67,9 @@ const FromBottomDiv: React.FC<MotionElementProps> = ({ children, className = '',
     <motion.div
       className={`transition-div ${className}`}
       initial={{ opacity: 0, y: 100 }}
+      {...rest}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 100, transition: { duration: 0.4 }}}
-      {...rest}
     >
       {children}
     </motion.div>

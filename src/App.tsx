@@ -35,16 +35,16 @@ const AppRouter = () => {
 
   return (
     <>
-      <main className="App h-screen flex overflow-hidden bg-gradient-red bg-cover bg-no-repeat bg-fixed scroll-none z-0">
+      <main className="App min-h-screen flex overflow-hidden bg-gradient-red bg-cover bg-no-repeat bg-fixed scroll-none z-0">
         <NavBar />
         <AnimatePresence>
           <Routes location={location} key={location.pathname}>
             {(!isAnyVisible || activeSection === "home") && <Route path="/" element={<Home key={"home"} onEnter={() => handleSectionEnter("home")} onExit={() => handleSectionExit()}/>} />}
             {(!isAnyVisible || activeSection === "about") && <Route path="/about" element={<About key={"about"} onEnter={() => handleSectionEnter("about")} onExit={() => handleSectionExit()}/>} />}
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/experiences" element={<Experiences />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
+            {(!isAnyVisible || activeSection === "skills") && <Route path="/skills" element={<Skills key={"skills"} onEnter={() => handleSectionEnter("skills")} onExit={() => handleSectionExit()}/>} />}
+            {(!isAnyVisible || activeSection === "experiences") && <Route path="/experiences" element={<Experiences key={"experiences"} onEnter={() => handleSectionEnter("experiences")} onExit={() => handleSectionExit()}/>} />}
+            {(!isAnyVisible || activeSection === "project") && <Route path="/projets" element={<Projects key={"projects"} onEnter={() => handleSectionEnter("projects")} onExit={() => handleSectionExit()}/>} />}
+            {(!isAnyVisible || activeSection === "contact") && <Route path="/contact" element={<Contact key={"contact"} onEnter={() => handleSectionEnter("contact")} onExit={() => handleSectionExit()}/>} />}
           </Routes>
         </AnimatePresence>
       </main>

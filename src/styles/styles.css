@@ -35,6 +35,11 @@
     color: #F3EDC8;
 }
 
+.separator {
+    background-color: #EAD196;
+    height: 1px;
+}
+
 .strong{
     font-weight: bold;
     color: #EAD196

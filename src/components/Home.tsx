@@ -16,9 +16,9 @@ const Home = ({onEnter, onExit}: any) => {
       onViewportLeave={onExit}
       >
         <div className="flex flex-col gap-4 md:w-3/6">
-          <h1 className="text-5xl font-bold">Bonjour, je m'appelle <span className="strong">Antoine</span>.</h1>
+          <h1 className="text-5xl strong">Antoine Leboucher</h1>
           <FromRightDiv className="flex flex-col gap-4 items-center md:items-start" transition={{ type: 'spring', delay: 1, duration: 0.5 }} exit={{}}>
-            <h2 className="text-xl">Je suis développeur <span className="strong">web</span> et <span className="text-secondary font-bold">software</span></h2>
+            <h2 className="text-xl">Etudiant en informatique à l'IUT de Blagnac</h2>
             <button onClick={() => navigate("/about")} className="w-fit px-5 py-3 button-red">Plus sur moi</button>
           </FromRightDiv>
         </div>
