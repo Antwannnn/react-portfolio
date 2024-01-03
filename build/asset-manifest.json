@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "./static/css/main.cde41124.css",
+    "main.js": "./static/js/main.05878815.js",
+    "static/media/horrorgame.png": "./static/media/horrorgame.08afff92ac00f34b8daf.png",
+    "static/media/e-commerce.png": "./static/media/e-commerce.19d3cf75adc0cc75e22f.png",
+    "static/media/photo.jpg": "./static/media/photo.9ff6f4d0c598920e714e.jpg",
+    "static/media/iutblagnac.png": "./static/media/iutblagnac.98c98121497ef8d6647a.png",
+    "static/media/portfolio.png": "./static/media/portfolio.189dda15f49fa39d1ca0.png",
+    "static/media/tailwind.png": "./static/media/tailwind.d5abcf62e57cbbee357e.png",
+    "static/media/mysql.png": "./static/media/mysql.60fe462b4dec8bbc0292.png",
+    "static/media/c.png": "./static/media/c.8a41f6f33a1e94193f53.png",
+    "static/media/jetbrains.png": "./static/media/jetbrains.e43071b53091398d7f7b.png",
+    "static/media/logo.png": "./static/media/logo.f128e0346d1d7aa4da04.png",
+    "static/media/ue.png": "./static/media/ue.cd6a9f9907b7bfa249c1.png",
+    "static/media/memory.png": "./static/media/memory.d7ecfc880d3cc734fa86.png",
+    "static/media/typescript.png": "./static/media/typescript.af108db04a54d784da9b.png",
+    "static/media/github.png": "./static/media/github.ed1c06d925fff0b57e32.png",
+    "index.html": "./index.html",
+    "static/media/menu.svg": "./static/media/menu.cd9ff18b7b98e56e42d0b53c06485ec0.svg",
+    "static/media/close.svg": "./static/media/close.c43f6da27bf90a97d7d35f09eacf0a2f.svg",
+    "main.cde41124.css.map": "./static/css/main.cde41124.css.map",
+    "main.05878815.js.map": "./static/js/main.05878815.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cde41124.css",
+    "static/js/main.05878815.js"
+  ]
+}
