@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { HashRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { Home, About, Skills, Experiences, Projects, Contact, NavBar } from './components/Components';
 import './styles/styles.css';
@@ -8,14 +8,14 @@ import './styles/styles.css';
 const App = () => {
   return (
     <div className="App">
-      <Router>
+      <HashRouter>
         <AppRouter />
-      </Router>
+      </HashRouter>
     </div>
   );
 }
 
-const AppRouter = () => {
+const AppRouter: React.FC = () => {
 
   const location = useLocation();
   const [isAnyVisible, setIsAnyVisible] = useState(false);
