@@ -45,22 +45,42 @@
     color: #EAD196
 }
 
+.yellow-tag{
+    background: #9c952e;
+}
+
 .orange-tag {
-    color: #edb03e;
+    background: #ed703e;
 }
 
 .red-tag {
-    color: #b74444;
+    background: #b74444;
+}
+
+.dark-blue-tag {
+    background: #3e5bed;
 }
 
 .blue-tag {
-    color: #3e9bed;
+    background: #3e9bed;
 }
 
 .purple-tag {
-    color: #a13ed1;
+    background: #a13ed1;
 }
 
 .pink-tag {
-    color: #ed3e9b;
+    background: #ed3e9b;
+}
+
+textarea, input{
+    background: #7d0a0a75;
+    border-radius: 10px;
+    resize: none;
+    border: none;
+    padding: 10px;
+}
+
+textarea::placeholder, input::placeholder{
+    color: #f3edc866;
 }

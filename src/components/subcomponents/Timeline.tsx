@@ -15,7 +15,7 @@ const PersonalTimeline: React.FC<TimelineItemProps> = ({ items, orientation }) =
           </div>
           <div className="flex w-full h-full gap-0 items-center justify-center">
             <div className="w-4 h-4 absolute flex justify-center items-center bg-secondary rounded-full" />
-            <div className={`w-full ${orientation === 'vertical' ? 'w-[1px] h-full' : 'w-full h-[1px]'} bg-secondary`}></div>
+            <div className={`${orientation === 'vertical' ? 'w-[1px] h-full' : 'w-full h-[1px]'} bg-secondary`}></div>
           </div>
           <div className='text-center text-sm w-4/6 gap-3 flex flex-col'>
             <h3 className="font-bold">{item.name}</h3>

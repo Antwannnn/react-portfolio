@@ -1,4 +1,4 @@
-import { motion, MotionProps, AnimatePresence } from "framer-motion";
+import { motion, MotionProps } from "framer-motion";
 import React from "react";
 
 interface MotionElementProps extends MotionProps {
@@ -24,10 +24,10 @@ const FromLeftDiv: React.FC<MotionElementProps> = ({ children, className = '', .
   return (
       <motion.div
         className={`transition-div ${className}`}
-        initial={{ opacity: 0, x: 100 }}
+        initial={{ opacity: 0, x: -100 }}
         {...rest}
         animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: 100, transition: { duration: 0.4 }}}
+        exit={{ opacity: 0, x: -100, transition: { duration: 0.4 }}}
       >
         {children}
       </motion.div>
@@ -38,10 +38,10 @@ const FromRightDiv: React.FC<MotionElementProps> = ({ children, className = '', 
   return (
     <motion.div
       className={`transition-div ${className}`}
-      initial={{ opacity: 0, x: -100 }}
+      initial={{ opacity: 0, x: 100 }}
       {...rest}
       animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -100, transition: { duration: 0.4 }}}
+      exit={{ opacity: 0, x: 100, transition: { duration: 0.4 }}}
     >
       {children}
     </motion.div>

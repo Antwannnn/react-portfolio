@@ -3,6 +3,8 @@ import github from "./tech/github.png";
 import memory from "./projects/memory.png";
 import bank from "./projects/bank.png";
 import horrorgame from "./projects/horrorgame.png";
+import portfolio from './projects/portfolio.png';
+import ecommerce from './projects/e-commerce.png';
 
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -39,6 +41,8 @@ export {
   lotdpt,
   photo,
   horrorgame,
+  portfolio,
+  ecommerce,
   tailwind,
   git,
   html,

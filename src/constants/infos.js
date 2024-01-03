@@ -133,9 +133,62 @@ const skills = [
 
 const projects = [
   {
+    name: "Site E-commerce",
+    description:
+      "Site e-commerce pour une entreprise fictive appelée \"Pages d'or\" spécialisée dans la vente de livres. Développé avec PHP, Tailwind CSS et Javascript le site est hébergé sur un serveur de l'IUT de Blagnac.",
+    link: "http://193.54.227.208/~saephp06/",
+    tags: [
+      {
+        name: "php",
+        color: "purple-tag",
+      },
+      {
+        name: "tailwind",
+        color: "blue-tag",
+      },
+      {
+        name: "javascript",
+        color: "yellow-tag",
+      },
+      {
+        name: "mysql",
+        color: "orange-tag",
+      },
+    ],
+    image: Assets.ecommerce,
+    source_code_link: ""
+  },
+  {
+    name: "Site Web Portfolio",
+    description:
+      "Portfolio développé avec React, Typescript et Tailwind CSS. Le site est responsive et est hébergé sur github pages.",
+    link: "https://antoine-leboucher.fr",
+    tags: [
+      {
+        name: "react",
+        color: "blue-tag",
+      },
+      {
+        name: "typescript",
+        color: "dark-blue-tag",
+      },
+      {
+        name: "tailwind",
+        color: "blue-tag",
+      },
+      {
+        name: "framer-motion",
+        color: "pink-tag",
+      },
+    ],
+    image: Assets.portfolio,
+    source_code_link: "https://github.com/Antwannnn/react-portfolio",
+  },
+  {
     name: "Jeu Memory",
     description:
       "Application JavaFX qui permet de jouer au jeu Memory. Le jeu est composé de 16 cartes qui sont retournées face cachée. Le but du jeu est de retrouver les paires de cartes identiques en un minimum de coups.",
+    link: null,
     tags: [
       {
         name: "java",
@@ -153,7 +206,8 @@ const projects = [
     name: "Agence Bancaire",
     description:
       "Application java qui permet de gérer les comptes bancaires des clients d'une agence bancaire mais également les comptes des employés de l'agence.",
-    tags: [
+    link: null,
+      tags: [
       {
         name: "java",
         color: "orange-tag",
@@ -174,10 +228,11 @@ const projects = [
     name: "Prototype de jeu d'horreur en 3D",
     description:
       "Prototype de jeu d'horreur en 3D développé avec le moteur de jeu Unreal Engine 4. Mécaniques de base et interactions avec l'environnement implémentées.",
-    tags: [
+    link: "https://drive.google.com/file/d/1N7xE_k6AQu7aGOEWx7CNY6airpYlPMW-/view?usp=drive_link",
+      tags: [
       {
         name: "c++",
-        color: "blue-tag",
+        color: "dark-blue-tag",
       },
       {
         name: "unreal-engine-4",

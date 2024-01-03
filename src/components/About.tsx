@@ -8,7 +8,7 @@ const About = ({ onEnter, onExit }: any) => {
   const isVertical = useMediaQuery({ query: '(max-width: 900px)' })
 
   return (
-    <FromTopDiv transition={{ duration: 0.5, delay: 0.5, type: 'spring' }}
+    <FromTopDiv transition={{ duration: 0.5, type: 'spring' }}
       onViewportEnter={onEnter}
       onViewportLeave={onExit}
       className="text-primary z-10 w-full px-3 flex flex-col md:text-start gap-5 my-10 justify-evenly items-center"
@@ -22,8 +22,8 @@ const About = ({ onEnter, onExit }: any) => {
           de faire de ma passion mon métier.
         </p>
       </div>
-      <TransitionDiv transition={{ delay: 1 }} className="separator w-5/6" />
-      <FromBottomDiv className="w-4/6 flex flex-col justify-center gap-1 items-center" transition={{ duration: 0.5, delay: 1.5, type: 'spring' }}>
+      <TransitionDiv transition={{ delay: 0.5 }} className="separator w-5/6" />
+      <FromBottomDiv className="w-4/6 flex flex-col justify-center gap-1 items-center" transition={{ duration: 0.5, delay: 1, type: 'spring' }}>
         <h2 className="text-2xl text-secondary">Mon cursus</h2>
         <PersonalTimeline items={curriculum} orientation={`${isVertical ? "vertical" : "horizontal"}`}/>
 

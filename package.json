@@ -3,11 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.11.3",
-    "@emotion/styled": "^11.11.0",
-    "@mui/lab": "^5.0.0-alpha.158",
-    "@mui/material": "^5.15.2",
-    "@mui/styles": "^5.15.2",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -19,6 +14,8 @@
     "framer-motion": "^10.16.16",
     "postcss-cli": "^11.0.0",
     "react": "^18.2.0",
+    "react-collapse": "^5.1.1",
+    "react-collapsed": "^4.1.2",
     "react-dom": "^18.2.0",
     "react-particles": "^2.12.2",
     "react-responsive": "^9.0.2",
@@ -53,5 +50,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-collapse": "^5.0.4"
   }
 }

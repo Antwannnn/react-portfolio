@@ -1,9 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
-import { HashRouter as Router, Route, Routes, NavLink, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { Home, About, Skills, Experiences, Projects, Contact, NavBar } from './components/Components';
-import ParticlesBackground from "./Particles/ParticlesBackground";
 import './styles/styles.css';
 
 const App = () => {
@@ -32,7 +31,6 @@ const AppRouter = () => {
     setActiveSection("");
   }
 
-
   return (
     <>
       <main className="App min-h-screen flex overflow-hidden bg-gradient-red bg-cover bg-no-repeat bg-fixed scroll-none z-0">
@@ -43,7 +41,7 @@ const AppRouter = () => {
             {(!isAnyVisible || activeSection === "about") && <Route path="/about" element={<About key={"about"} onEnter={() => handleSectionEnter("about")} onExit={() => handleSectionExit()}/>} />}
             {(!isAnyVisible || activeSection === "skills") && <Route path="/skills" element={<Skills key={"skills"} onEnter={() => handleSectionEnter("skills")} onExit={() => handleSectionExit()}/>} />}
             {(!isAnyVisible || activeSection === "experiences") && <Route path="/experiences" element={<Experiences key={"experiences"} onEnter={() => handleSectionEnter("experiences")} onExit={() => handleSectionExit()}/>} />}
-            {(!isAnyVisible || activeSection === "project") && <Route path="/projets" element={<Projects key={"projects"} onEnter={() => handleSectionEnter("projects")} onExit={() => handleSectionExit()}/>} />}
+            {(!isAnyVisible || activeSection === "projects") && <Route path="/projects" element={<Projects key={"projects"} onEnter={() => handleSectionEnter("projects")} onExit={() => handleSectionExit()}/>} />}
             {(!isAnyVisible || activeSection === "contact") && <Route path="/contact" element={<Contact key={"contact"} onEnter={() => handleSectionEnter("contact")} onExit={() => handleSectionExit()}/>} />}
           </Routes>
         </AnimatePresence>
