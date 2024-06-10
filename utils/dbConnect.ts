@@ -4,7 +4,7 @@ if (!process.env.MONGODB_URI) {
   throw new Error("Please add your MONGODB_URI to .env.local");
 }
 
-const MONGODB_URI: string = process.env.MONGODB_URI;
+const MONGODB_URI: string = process.env.MONGODB_URI_DEVELOPMENT;
 
 let globalWithMongoose = global as typeof globalThis & {
   mongoose: any;
@@ -23,6 +23,7 @@ async function dbConnect() {
   if (!cached.promise) {
 
     cached.promise = mongoose.connect(MONGODB_URI, {dbName: 'portfolio', bufferCommands: false}).then((mongoose) => {
+      console.log("Connected to MongoDB");    
       return mongoose;
     });
   }

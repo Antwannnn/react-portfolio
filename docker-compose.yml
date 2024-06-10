@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.8'
 
 services:
   nextjs:
@@ -8,9 +8,19 @@ services:
     volumes:
       - .:/app
     environment:
-      - NODE_ENV=development
-      - SMTP_HOST=maildev
-      - SMTP_PORT=1025
+      - NODE_ENV=production
+      - MONGODB_URI=mongodb://root:example@mongo:27017/mydatabase?authSource=admin
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - '27017:27017'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_DATABASE: mydatabase
 
   maildev:
     image: maildev/maildev
