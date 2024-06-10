@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  nextjs:
+    build: .
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+    environment:
+      - NODE_ENV=development
+      - SMTP_HOST=maildev
+      - SMTP_PORT=1025
+
+  maildev:
+    image: maildev/maildev
+    ports:
+      - '1080:80'   # Interface Web UI
+      - '1025:1025' # SMTP server
