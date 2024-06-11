@@ -1,10 +1,10 @@
 const dbConnect = require('@/utils/dbConnect');
 const Project = require('@/models/Project');
 const seed = async () => {
+  
   await dbConnect();
 
   await Project.deleteMany({});
-  await Language.deleteMany({});
 
   const projects = [
     {
