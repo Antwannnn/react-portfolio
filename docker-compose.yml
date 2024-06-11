@@ -9,7 +9,7 @@ services:
       - .:/app
     environment:
       - NODE_ENV=development
-      - MONGODB_URI=mongodb://root:example@mongo:27017/mydatabase?authSource=admin
+      - MONGODB_URI=mongodb://root:password@mongo:27017/mydatabase?authSource=admin
     depends_on:
       - mongo
 
@@ -19,8 +19,10 @@ services:
       - '27017:27017'
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_ROOT_PASSWORD: password
       MONGO_INITDB_DATABASE: mydatabase
+      ME_CONFIG_BASICAUTH_USERNAME: admin
+      ME_CONFIG_BASICAUTH_PASSWORD: 1234
 
   mongo-express:
     image: mongo-express
