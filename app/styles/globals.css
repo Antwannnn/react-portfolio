@@ -3,31 +3,54 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: #333533;
+  --background-end-rgb: #202020; 
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, var(--background-start-rgb), var(--background-end-rgb));
+  font-size: 1.5rem;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.dropdown {
+  @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
+}
+
+.dropdown_link {
+  @apply text-sm text-gray-700 hover:text-gray-500 font-medium;
+}
+
+.navlink {
+  @apply text-light;
+  display: inline-flex;
+  position: relative;
+  transition: 0.2s ease-out;
+}
+
+.navlink:hover {
+  @apply text-light_yellow;
+}
+
+.navlink_active {
+  @apply text-light_yellow;
+}
+
+.separator{
+  @apply bg-light;
+  opacity: 60%;
+  height: 1px;
+}
+
+.blurred-bg {
+  @apply backdrop-blur-[2px];
 }

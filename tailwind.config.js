@@ -9,18 +9,13 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       colors: {
-        primary_dark: '#16191C',
-        primary_light: '#E9ECEF',
-        secondary_dark: '#1E2226',
-        secondary_light: '#DEE2E6',
-        tertiary_dark: '#2C3136',
-        tertiary_light: '#CED4DA',
+        primary: '#333533',
+        secondary: '#202020',
+        tertiary: '#000000',
+        dark_yellow: '#ffd100',
+        light_yellow: '#ffee32',
+        light: '#a5a3a3',
       }
     },
   },

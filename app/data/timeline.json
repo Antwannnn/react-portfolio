@@ -1,0 +1,17 @@
+{
+    "1": {
+        "name": "Collège",
+        "period": "2015-2019",
+        "location": "Collège Leo Ferré, Gourdon (46)"
+    },
+    "2": {
+        "name": "Lycée",
+        "period": "2019-2022",
+        "location": "Lycée Leo Ferré, Gourdon (46)"
+    },
+    "3": {
+        "name": "BUT Informatique",
+        "period": "2022-2025",
+        "location": "IUT de Blagnac (31)"
+    }
+}
