@@ -6,8 +6,6 @@ const Projects = ({ onEnter, onExit }: any) => {
     return (
         <FromLeftDiv
             className="text-primary z-10 w-full min-h-full px-3 py-10 flex flex-col text-center justify-evenly gap-10 items-center"
-            onViewportEnter={onEnter}
-            onViewportLeave={onExit}
             transition={{ type: 'spring', duration: 0.5 }}
         >
             <h1 className="text-5xl">Projets</h1>

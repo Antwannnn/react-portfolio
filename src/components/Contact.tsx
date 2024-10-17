@@ -4,9 +4,7 @@ import { FromBottomDiv, FromTopDiv } from "../Motion/MotionElements";
 
 const Contact = ({ onEnter, onExit } : any)=> {
     return (
-        <FromTopDiv className="text-primary z-10 w-full min-h-full px-3 py-10 flex flex-col text-center justify-center gap-10 items-center"
-        onViewportEnter={onEnter} 
-        onViewportLeave={onExit} 
+        <FromTopDiv className="text-primary z-10 w-full min-h-full px-3 py-10 flex flex-col text-center justify-center gap-10 items-center" 
         transition={{ type: 'spring', duration: 0.5 }}>
             
             <h1 className="text-5xl">Contact</h1>

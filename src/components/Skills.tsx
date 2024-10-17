@@ -6,8 +6,7 @@ const Skills = ({ onEnter, onExit }: any) => {
   return (
     <FromLeftDiv className="text-primary z-10 w-full px-3 py-10 flex flex-col text-center gap-3 justify-center items-center"
       transition={{ type: 'spring', duration: 0.5 }}
-      onViewportEnter={onEnter}
-      onViewportLeave={onExit}>
+    >
       <h1 className="text-5xl">Mes compétences</h1>
       <div className="flex flex-wrap justify-center">
         {skills.map((skill, index) => (

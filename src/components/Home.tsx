@@ -10,8 +10,6 @@ const Home = ({onEnter, onExit}: any) => {
       <FromLeftDiv 
       className="text-primary z-10 w-full px-10 flex flex-col md:flex-row text-center gap-3 md:text-start justify-center items-center" 
       transition={{ type: 'spring', duration: 0.5 }}
-      onViewportEnter={onEnter}
-      onViewportLeave={onExit}
       >
         <div className="flex flex-col gap-4 md:w-3/6">
           <h1 className="text-5xl strong">Antoine Leboucher</h1>

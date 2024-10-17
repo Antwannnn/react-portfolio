@@ -8,8 +8,7 @@ const Experiences = ({ onEnter, onExit }: any) => {
   return (
     <FromTopDiv className="text-primary z-10 w-full px-3 py-10 flex flex-col text-center gap-10 justify-center items-center"
       transition={{ type: 'spring', duration: 0.5 }}
-      onViewportEnter={onEnter}
-      onViewportLeave={onExit}>
+    >
       <div>
         <h1 className="text-5xl">Experiences</h1>
       </div>

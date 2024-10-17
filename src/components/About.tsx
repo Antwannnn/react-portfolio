@@ -1,4 +1,4 @@
-import PersonalTimeline from "../components/subcomponents/Timeline";
+import PersonalTimeline from "./subcomponents/Timeline";
 import { TransitionDiv, FromBottomDiv, FromTopDiv } from '../Motion/MotionElements'
 import { useMediaQuery } from "react-responsive";
 import { curriculum } from '../constants/infos';
@@ -9,8 +9,6 @@ const About = ({ onEnter, onExit }: any) => {
 
   return (
     <FromTopDiv transition={{ duration: 0.5, type: 'spring' }}
-      onViewportEnter={onEnter}
-      onViewportLeave={onExit}
       className="text-primary z-10 w-full px-3 flex flex-col md:text-start gap-5 my-10 justify-evenly items-center"
     >
       <div className="w-4/6 text-center flex flex-col gap-6">
