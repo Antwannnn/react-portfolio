@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react';
 import { useNavigate, useMatch } from 'react-router-dom';
 import { motion, useAnimation } from 'framer-motion';
 import React from 'react';
-import { navLinks } from '../../constants/infos';
-import { logo, menu, close } from '../../assets/assets';
+import { useTranslation } from 'react-i18next';
+import { logo, menu, close } from '../../../public/assets/assets';
+import LanguagePicker from './LanguagePicker';
 import { useMediaQuery } from 'react-responsive';
 
 type NavLinkProps = {
@@ -51,10 +52,26 @@ const NavLink: React.FC<NavLinkProps> = ({ path, label, onClick, children, activ
 
 const NavBar = () => {
 
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const appear = useAnimation();
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 640px)' })
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const langToCountryMap: { [key: string]: string } = {
+    "en-US": "US",
+    "fr-FR": "FR",
+    "es-ES": "ES",
+  };
+
+  const getCountryCodeFromLanguage = (language: string) => {
+    return langToCountryMap[language] || "FR"; // FR par défaut si la langue n'est pas trouvée
+  };
+
+  const [selectedCountryCode, setSelectedCountryCode] = useState(() => {
+    const browserLanguage = navigator.language; // Obtient la langue du navigateur, ex: 'fr-FR'
+    return getCountryCodeFromLanguage(browserLanguage); // Mapper à un code pays
+  });
 
   const toggleMenu = () => {
     if(isMenuOpen) {
@@ -73,6 +90,15 @@ const NavBar = () => {
       appear.start('hidden');
       setIsMenuOpen(false);
     }
+
+    const storedCountryCode = localStorage.getItem("selectedCountryCode");
+    const storedLanguage = localStorage.getItem("selectedLanguage");
+
+    if (storedCountryCode && storedLanguage) {
+      setSelectedCountryCode(storedCountryCode);
+      i18n.changeLanguage(storedLanguage);
+    }
+
   }, [isTabletOrMobile, appear])
 
   return (
@@ -85,14 +111,14 @@ const NavBar = () => {
       variants={appearVariants}
       animate={appear}
       >
-        <nav className="flex h-full min-w-56 flex-col items-center justify-start relative sm:fixed">
+        <nav className="flex h-full min-w-56 flex-col gap-10 items-center justify-start relative sm:fixed">
           <div className="flex justify-center-center py-10">
             <NavLink path="/" className="opacity-70 hover:opacity-100 transition-opacity duration-300" onClick={() => { navigate("/") }}>
               <img className="w-[80px]" src={logo} alt="" />
             </NavLink>
           </div>
           <ul className="flex flex-col w-full">
-            {navLinks.map((link) => (
+            {t('navlinks').map((link) => (
               <li key={link.id} className="flex items-center w-full justify-center h-16">
                 <NavLink
                   path={link.path}
@@ -106,6 +132,7 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
+          <LanguagePicker selectedCountryCode={selectedCountryCode} setSelectedCountryCode={setSelectedCountryCode} />
         </nav>
       </motion.div>
     </>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
@@ -63,7 +63,7 @@ export const ProjectCase = (items: any) => {
                 initial='unfocused' animate={animate} variants={imgVariants}
                 className="text-primary h-96 flex flex-col justify-around items-center w-full bg-secondary bg-opacity-15 rounded-xl cursor-pointer">
                 <div className="w-72 flex justify-center">
-                    <img className="py-5 w-5/6" src={items.project.image} alt="" />
+                    <img className="py-5 w-5/6" src={`./assets/projects/${items.project.image}`} alt="" />
                 </div>
                 <h1 className="px-3 text-xl">{items.project.name}</h1>
                 <div className="flex flex-wrap gap-2 w-full justify-center px-5">

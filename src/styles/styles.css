@@ -76,9 +76,14 @@
 textarea, input{
     background: #7d0a0a75;
     border-radius: 10px;
+    
     resize: none;
     border: none;
     padding: 10px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
 }
 
 textarea::placeholder, input::placeholder{

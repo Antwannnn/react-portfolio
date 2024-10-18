@@ -2,17 +2,17 @@
   "navlinks": [
     {
       "id": "home",
-      "name": "Accueil",
+      "name": "Home",
       "path": "/"
     },
     {
       "id": "about",
-      "name": "A propos",
+      "name": "About",
       "path": "/about"
     },
     {
       "id": "skills",
-      "name": "Compétences",
+      "name": "Skills",
       "path": "/skills"
     },
     {
@@ -22,7 +22,7 @@
     },
     {
       "id": "projects",
-      "name": "Projets",
+      "name": "Projects",
       "path": "/projects"
     },
     {
@@ -33,37 +33,38 @@
   ],
   "home": {
     "title": "Antoine Leboucher",
-    "description": "Etudiant en alternance en IUT Informatique à Blagnac",
-    "button": "Plus sur moi"
+    "description": "Student in an apprenticeship at IUT Informatique in Blagnac",
+    "button": "More about me",
+    "photo": "photo.jpg"
   },
   "about": {
-    "title": "À propos de moi",
-    "desc-subtitle": "Qui suis-je ?",
-    "desc": "Je m'appelle Antoine Leboucher, j'ai 20 ans et je suis étudiant au département informatique de l'IUT de Blagnac. Actuellement en 2ème année, je suis à la recherche d'une alternance pour la 3ème année de mon BUT. Ma passion pour l'informatique et tout ce qui l'entoure remonte à mon enfance, et je suis aujourd'hui très heureux de pouvoir avoir l'occasion de faire de ma passion mon métier.",
+    "title": "About Me",
+    "desc-subtitle": "Who am I?",
+    "desc": "My name is Antoine Leboucher, I am 20 years old, and I am a student in the computer science department at the IUT of Blagnac. Currently in my 2nd year, I am looking for an apprenticeship for the 3rd year of my BUT. My passion for computer science and everything around it goes back to my childhood, and I am very happy today to have the opportunity to make my passion my profession.",
     "timeline": {
-      "title": "Mon parcours",
+      "title": "My Journey",
       "items": [
         {
           "date": "2015-2019",
-          "title": "Collège",
+          "title": "Middle School",
           "place": "Collège Leo-Ferré Gourdon (46)"
         },
         {
           "date": "2019-2022",
-          "title": "Baccalauréat Spécialité SVT & LLCE Anglais",
+          "title": "Baccalaureate Specializing in Biology & LLCE English",
           "place": "Lycée Leo-Ferré Gourdon (46)"
         },
         {
           "date": "2022-2025",
           "title": "BUT Informatique",
-          "place": "IUT de Blagnac (31)"
+          "place": "IUT of Blagnac (31)"
         }
       ]
     }
   },
   "skills": {
-    "title": "Compétences",
-    "desc": "Voici quelques-unes des compétences que j'ai pu acquérir au cours de mes études et de mes projets personnels.",
+    "title": "My skills",
+    "desc": "Here are some of the skills I have acquired throughout my studies and personal projects.",
     "items": [
       {
         "name": "HTML 5",
@@ -176,31 +177,31 @@
     ]
   },
   "experiences": {
-    "title": "Expériences",
-    "noexperiencedesc": "Aucune expérience professionnelle pour l'instant",
-    "noexperiencetext": "A vous de changer ça !",
-    "button": "Contactez-moi",
+    "title": "Experiences",
+    "noexperiencedesc": "No professional experience yet",
+    "noexperiencetext": "It's up to you to change that!",
+    "button": "Contact me",
     "items": [
       {
-        "title": "Stage de 2ème année BUT",
-        "date": "Fevrier 2024 - Avril 2024",
-        "place": "Ministère des Armées",
+        "title": "2nd Year BUT Internship",
+        "date": "February 2024 - April 2024",
+        "place": "Ministry of the Armed Forces",
         "image": "mda"
       },
       {
-        "title": "Alternance - Développement Logiciel et Analyse de signaux satell  itaires inconnus",
-        "date": "Septembre 2024 - Septembre 2025",
-        "place": "Ministère des Armées",
+        "title": "Apprenticeship - Software Development and Analysis of Unknown Satellite Signals",
+        "date": "September 2024 - September 2025",
+        "place": "Ministry of the Armed Forces",
         "image": "mda.jpg"
       }
     ]
   },
   "projects": {
-    "title": "Projets",
+    "title": "Projects",
     "items": [
       {
-        "name": "Site E-commerce",
-        "description": "Site e-commerce pour une entreprise fictive appelée \"Pages d'or\" spécialisée dans la vente de livres. Développé avec PHP, Tailwind CSS et Javascript le site est hébergé sur un serveur de l'IUT de Blagnac.",
+        "name": "E-commerce Site",
+        "description": "E-commerce site for a fictional company called \"Pages d'or\" specializing in book sales. Developed with PHP, Tailwind CSS, and JavaScript, the site is hosted on a server at IUT Blagnac.",
         "link": "http://193.54.227.208/~saephp06/",
         "tags": [
           {
@@ -220,12 +221,12 @@
             "color": "orange-tag"
           }
         ],
-        "image": "ecommerce",
+        "image": "e-commerce.png",
         "source_code_link": ""
       },
       {
-        "name": "Site Web Portfolio",
-        "description": "Portfolio développé avec React, Typescript et Tailwind CSS. Le site est responsive et est hébergé sur github pages.",
+        "name": "Web Portfolio",
+        "description": "Portfolio developed with React, Typescript, and Tailwind CSS. The site is responsive and hosted on GitHub Pages.",
         "link": "https://antoine-leboucher.fr",
         "tags": [
           {
@@ -245,12 +246,12 @@
             "color": "pink-tag"
           }
         ],
-        "image": "portfolio",
+        "image": "portfolio.png",
         "source_code_link": "https://github.com/Antwannnn/react-portfolio"
       },
       {
-        "name": "Jeu Memory",
-        "description": "Application JavaFX qui permet de jouer au jeu Memory. Le jeu est composé de 16 cartes qui sont retournées face cachée. Le but du jeu est de retrouver les paires de cartes identiques en un minimum de coups.",
+        "name": "Memory Game",
+        "description": "JavaFX application that allows playing the Memory game. The game consists of 16 cards that are flipped face down. The goal is to find matching pairs of cards in as few moves as possible.",
         "link": null,
         "tags": [
           {
@@ -262,12 +263,12 @@
             "color": "red-tag"
           }
         ],
-        "image": "memory",
+        "image": "memory.png",
         "source_code_link": "https://github.com/Antwannnn/Memory-Game"
       },
       {
-        "name": "Agence Bancaire",
-        "description": "Application java qui permet de gérer les comptes bancaires des clients d'une agence bancaire mais également les comptes des employés de l'agence.",
+        "name": "Bank Agency",
+        "description": "Java application that allows managing customer bank accounts as well as employee accounts of a bank agency.",
         "link": null,
         "tags": [
           {
@@ -283,12 +284,12 @@
             "color": "pink-tag"
           }
         ],
-        "image": "bank",
+        "image": "bank.png",
         "source_code_link": "https://github.com/IUT-Blagnac/sae2023-bank-1b3"
       },
       {
-        "name": "Prototype de jeu d'horreur en 3D",
-        "description": "Prototype de jeu d'horreur en 3D développé avec le moteur de jeu Unreal Engine 4. Mécaniques de base et interactions avec l'environnement implémentées.",
+        "name": "3D Horror Game Prototype",
+        "description": "3D horror game prototype developed with Unreal Engine 4. Basic mechanics and environment interactions implemented.",
         "link": "https://drive.google.com/file/d/1N7xE_k6AQu7aGOEWx7CNY6airpYlPMW-/view?usp=drive_link",
         "tags": [
           {
@@ -304,14 +305,18 @@
             "color": "blue-tag"
           }
         ],
-        "image": "horrorgame",
+        "image": "horrorgame.png",
         "source_code_link": "https://github.com/Antwannnn/TheForgottenWords_SourceCode/tree/main"
       }
     ]
   },
-  "contact":{
-    "emailplaceholder": "Votre adresse email",
-    "messageplaceholder": "Votre message",
-    "button": "Envoyer"
+  "contact": {
+    "title": "Contact me",
+    "subtitle": "If you have any questions or would like to work with me.",
+    "nameplaceholder": "Your name",
+    "surnameplaceholder": "Your surname",
+    "emailplaceholder": "your.email@address.here",
+    "messageplaceholder": "Your message",
+    "button": "Send"
   }
 }

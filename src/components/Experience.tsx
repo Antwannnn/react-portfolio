@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { FromTopDiv, FromBottomDiv } from '../Motion/MotionElements'
 
-const Experiences = ({ onEnter, onExit }: any) => {
+const Experiences = () => {
 
   const navigate = useNavigate();
 

@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes, useLocation, createBrowserRouter } from '
 import { AnimatePresence } from 'framer-motion';
 import { Home, About, Skills, Experiences, Projects, Contact, NavBar } from './components/Components';
 import './styles/styles.css';
+import './config/i18n';
 
 const App = () => {
   return (
