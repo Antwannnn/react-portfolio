@@ -1,85 +1,87 @@
-import { useEffect } from "react";
 import { useState } from "react";
-import { motion, useAnimation } from "framer-motion";
+import { useAnimation } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 import { FromRightDiv } from "../../Motion/MotionElements";
-import '../../styles/project.css';
+import { CardBody, CardContainer, CardItem } from "./3DCard";
+import "../../styles/project.css";
 
 export const ProjectCase = (items: any) => {
 
-    const descriptionVariants = {
-        visible: {
-            y: 20,
-            opacity: 1,
-            transition: { duration: 1, type: "spring", bounce: 0.5 }
-        },
-        hidden: {
-            opacity: 0,
-            y: 0,
-        },
+
+  const animate = useAnimation();
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 640px)" });
+  const [isDescriptionMenuOpen, setIsDescriptionMenuOpen] = useState(false);
+
+  const handleDescriptionMenu = () => {
+    if (isDescriptionMenuOpen) {
+      setIsDescriptionMenuOpen(false);
+      animate.start("hidden");
+      animate.start("unfocused");
+    } else {
+      setIsDescriptionMenuOpen(true);
+      animate.start("visible");
+      animate.start("focused");
     }
+  };
 
-    const imgVariants = {
-        focused: {
-            opacity: 1,
-            transition: { duration: 1, type: "spring" }
-        },
-        unfocused: {
-            opacity: 0.66,
-        },
-    }
 
-    const animate = useAnimation();
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 640px)' })
-    const [isDescriptionMenuOpen, setIsDescriptionMenuOpen] = useState(false);
-
-    const handleDescriptionMenu = () => {
-        if (isDescriptionMenuOpen) {
-            setIsDescriptionMenuOpen(false);
-            animate.start('hidden');
-            animate.start('unfocused');
-        } else {
-            setIsDescriptionMenuOpen(true);
-            animate.start('visible');
-            animate.start('focused');
-        }
-    }
-
-    useEffect(() => {
-        if (isTabletOrMobile) {
-            animate.start('visible');
-        } else {
-            animate.start('hidden');
-        }
-    }, [isTabletOrMobile, animate])
-
-    return (
-        <FromRightDiv 
-            className="w-72 flex flex-col" onHoverStart={() => { if (!isTabletOrMobile) handleDescriptionMenu() }}
-            onHoverEnd={() => { if (!isTabletOrMobile) handleDescriptionMenu() }}
-            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}>
-
-            <motion.div
-                initial='unfocused' animate={animate} variants={imgVariants}
-                className="text-primary h-96 flex flex-col justify-around items-center w-full bg-secondary bg-opacity-15 rounded-xl cursor-pointer">
-                <div className="w-72 flex justify-center">
-                    <img className="py-5 w-5/6" src={`./assets/projects/${items.project.image}`} alt="" />
-                </div>
-                <h1 className="px-3 text-xl">{items.project.name}</h1>
-                <div className="flex flex-wrap gap-2 w-full justify-center px-5">
-                    {items.project.tags.map((tag: any) => (
-                        <p className={`px-2 rounded-2xl text-sm opacity-75 italic ${tag.color}`}>#{tag.name}</p>
-                    ))}
-                </div>
-                <div className="flex gap-2 w-full justify-center">
-                    {items.project.link && <a href={items.project.link} rel="noopener noreferrer" target="_blank"><button className="button-red px-5 py-2">Lien</button></a>}
-                    {items.project.source_code_link && <a href={items.project.source_code_link} rel="noopener noreferrer" target="_blank"><button className="button-red px-5 py-2">Code source</button></a>}
-                </div>
-            </motion.div>
-            <motion.div initial='hidden' exit={{ y: 0 }} variants={descriptionVariants} animate={animate} className="sticky  overflow-y-auto w-72 bg-cherryred px-2 py-1 h-20 rounded-3xl ">
-                <p className="text-sm">{items.project.description}</p>
-            </motion.div>
-        </FromRightDiv>
-
-    );
+  return (
+    <FromRightDiv
+      className="w-72 flex flex-col"
+      onHoverStart={() => {
+        if (!isTabletOrMobile) handleDescriptionMenu();
+      }}
+      onHoverEnd={() => {
+        if (!isTabletOrMobile) handleDescriptionMenu();
+      }}
+      whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+    >
+      {items.map((item, index) => (
+        <CardContainer className="inter-var">
+          <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+            <CardItem
+              translateZ="50"
+              className="text-xl font-bold text-neutral-600 dark:text-white"
+            >
+              {item.name}
+            </CardItem>
+            <CardItem
+              as="p"
+              translateZ="60"
+              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+            >
+              {item.description}
+            </CardItem>
+            <CardItem translateZ="100" className="w-full mt-4">
+              <img
+                src={`./assets/projects/${items.image}`}
+                height="1000"
+                width="1000"
+                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                alt="thumbnail"
+              />
+            </CardItem>
+            <div className="flex justify-between items-center mt-20">
+              <CardItem
+                translateZ={20}
+                as={"a"}
+                href={item.link}
+                target="__blank"
+                className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+              >
+                Try now →
+              </CardItem>
+              <CardItem
+                translateZ={20}
+                as="button"
+                className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+              >
+                View source
+              </CardItem>
+            </div>
+          </CardBody>
+        </CardContainer>
+      ))}
+    </FromRightDiv>
+  );
 };

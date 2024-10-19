@@ -51,13 +51,13 @@
         },
         {
           "date": "2019-2022",
-          "title": "Baccalaureate Specializing in Biology & LLCE English",
+          "title": "Baccalauréat Specializing in Biology & LLCE English",
           "place": "Lycée Leo-Ferré Gourdon (46)"
         },
         {
           "date": "2022-2025",
-          "title": "BUT Informatique",
-          "place": "IUT of Blagnac (31)"
+          "title": "Computer Science Bachelor's Degree",
+          "place": "University Institute of Technology (31)"
         }
       ]
     }
@@ -99,13 +99,13 @@
       {
         "name": "PHP",
         "level": 60,
-        "color": "purple",
+        "color": "lightblue ",
         "icon": "php.png"
       },
       {
         "name": "Java",
         "level": 80,
-        "color": "red",
+        "color": "orange",
         "icon": "java.png"
       },
       {
@@ -123,13 +123,13 @@
       {
         "name": "git",
         "level": 60,
-        "color": "red",
+        "color": "darkred",
         "icon": "git.png"
       },
       {
         "name": "Unreal Engine",
         "level": 50,
-        "color": "purple",
+        "color": "purple-300",
         "icon": "ue.png"
       },
       {
@@ -141,31 +141,31 @@
       {
         "name": "MongoDB",
         "level": 30,
-        "color": "green",
+        "color": "lightgreen",
         "icon": "mongodb.png"
       },
       {
         "name": "Node.js",
         "level": 60,
-        "color": "green",
+        "color": "lightgreen",
         "icon": "nodejs.png"
       },
       {
         "name": "Vue.js",
         "level": 30,
-        "color": "green",
+        "color": "lightgreen",
         "icon": "vuejs.png"
       },
       {
         "name": "Angular",
         "level": 50,
-        "color": "red",
+        "color": "darkred",
         "icon": "angular.png"
       },
       {
         "name": "Docker",
         "level": 50,
-        "color": "blue",
+        "color": "lightblue",
         "icon": "docker.png"
       },
       {
@@ -226,7 +226,7 @@
       },
       {
         "name": "Web Portfolio",
-        "description": "Portfolio developed with React, Typescript, and Tailwind CSS. The site is responsive and hosted on GitHub Pages.",
+        "description": "Portfolio developed with React, Typescript, and Tailwind CSS. The site is responsive and hosted on Vercel. This is the website you are currently on !",
         "link": "https://antoine-leboucher.fr",
         "tags": [
           {
@@ -307,6 +307,31 @@
         ],
         "image": "horrorgame.png",
         "source_code_link": "https://github.com/Antwannnn/TheForgottenWords_SourceCode/tree/main"
+      },
+      {
+        "name": "Fullstack showcase website for Emcaffe",
+        "description": "Showcase website created as part of a university project for the company Emcaffe." ,
+        "link": "https://emcaffe.vercel.app/",
+        "tags": [
+          {
+            "name": "react",
+            "color": "blue-tag"
+          },
+          {
+            "name": "javascript",
+            "color": "yellow-tag"
+          },
+          {
+            "name": "tailwind",
+            "color": "blue-tag"
+          },
+          {
+            "name": "supabase",
+            "color": "green-tag"
+          }
+        ],
+        "image": "emcaffe.png",
+        "source_code_link": null
       }
     ]
   },

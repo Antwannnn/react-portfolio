@@ -3,7 +3,9 @@ import { useNavigate, useMatch } from 'react-router-dom';
 import { motion, useAnimation } from 'framer-motion';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { logo, menu, close } from '../../../public/assets/assets';
+import close from '/assets/close.svg';
+import menu from '/assets/menu.svg';
+import logo from '/assets/logo.png';
 import LanguagePicker from './LanguagePicker';
 import { useMediaQuery } from 'react-responsive';
 
@@ -127,6 +129,9 @@ const NavBar = () => {
                   activeStyle="border-opacity-100"
                   onClick={() => {
                     navigate(link.path);
+                    if(isTabletOrMobile) {
+                      toggleMenu();
+                    }
                   }}
                 />
               </li>

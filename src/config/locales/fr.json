@@ -226,7 +226,7 @@
       },
       {
         "name": "Site Web Portfolio",
-        "description": "Portfolio développé avec React, Typescript et Tailwind CSS. Le site est responsive et est hébergé sur github pages.",
+        "description": "Portfolio développé avec React, Typescript et Tailwind CSS. Le site est responsive et est hébergé sur Vercel. C'est le site sur lequel vous vous trouvez actuellement !",
         "link": "https://antoine-leboucher.fr",
         "tags": [
           {
@@ -307,6 +307,31 @@
         ],
         "image": "horrorgame.png",
         "source_code_link": "https://github.com/Antwannnn/TheForgottenWords_SourceCode/tree/main"
+      },
+      {
+        "name": "Site vitrine fullstack Emcaffe",
+        "description": "Site web vitrine créé dans le cadre d'un projet universitaire pour l'entreprise Emcaffe.",
+        "link": "https://emcaffe.vercel.app/",
+        "tags": [
+          {
+            "name": "react",
+            "color": "blue-tag"
+          },
+          {
+            "name": "javascript",
+            "color": "yellow-tag"
+          },
+          {
+            "name": "tailwind",
+            "color": "blue-tag"
+          },
+          {
+            "name": "supabase",
+            "color": "green-tag"
+          }
+        ],
+        "image": "emcaffe.png",
+        "source_code_link": null
       }
     ]
   },
@@ -315,7 +340,7 @@
     "subtitle": "Si vous avez des questions ou si vous souhaitez travailler avec moi.",
     "nameplaceholder": "Votre prénom",
     "surnameplaceholder": "Votre nom",
-    "emailplaceholder": "votre.adress@email.ici",
+    "emailplaceholder": "votre.adresse@email.ici",
     "messageplaceholder": "Votre message",
     "button": "Envoyer"
   }
