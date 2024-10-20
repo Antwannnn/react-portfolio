@@ -1,0 +1,349 @@
+{
+  "navlinks": [
+    {
+      "id": "home",
+      "name": "Home",
+      "path": "/"
+    },
+    {
+      "id": "about",
+      "name": "About",
+      "path": "/about"
+    },
+    {
+      "id": "skills",
+      "name": "Skills",
+      "path": "/skills"
+    },
+    {
+      "id": "experiences",
+      "name": "Experiences",
+      "path": "/experiences"
+    },
+    {
+      "id": "projects",
+      "name": "Projects",
+      "path": "/projects"
+    },
+    {
+      "id": "contact",
+      "name": "Contact",
+      "path": "/contact"
+    }
+  ],
+  "home": {
+    "title": "Antoine Leboucher",
+    "description": "Student in an apprenticeship at IUT Informatique in Blagnac",
+    "button": "More about me",
+    "photo": "photo.jpg"
+  },
+  "about": {
+    "title": "About Me",
+    "desc-subtitle": "Who am I?",
+    "desc": "My name is Antoine Leboucher, I am 20 years old, and I am a student in the computer science department at the IUT of Blagnac. Currently in my 2nd year, I am looking for an apprenticeship for the 3rd year of my BUT. My passion for computer science and everything around it goes back to my childhood, and I am very happy today to have the opportunity to make my passion my profession.",
+    "timeline": {
+      "title": "My Journey",
+      "items": [
+        {
+          "date": "2015-2019",
+          "title": "Middle School",
+          "place": "Collège Leo-Ferré Gourdon (46)"
+        },
+        {
+          "date": "2019-2022",
+          "title": "Baccalauréat Specializing in Biology & LLCE English",
+          "place": "Lycée Leo-Ferré Gourdon (46)"
+        },
+        {
+          "date": "2022-2025",
+          "title": "Computer Science Bachelor's Degree",
+          "place": "University Institute of Technology (31)"
+        }
+      ]
+    }
+  },
+  "skills": {
+    "title": "My skills",
+    "desc": "Here are some of the skills I have acquired throughout my studies and personal projects.",
+    "items": [
+      {
+        "name": "HTML 5",
+        "level": 80,
+        "color": "orange",
+        "icon": "html.png"
+      },
+      {
+        "name": "Tailwind CSS",
+        "level": 80,
+        "color": "lightblue",
+        "icon": "tailwind.png"
+      },
+      {
+        "name": "JavaScript",
+        "level": 70,
+        "color": "yellow",
+        "icon": "javascript.png"
+      },
+      {
+        "name": "Typescript",
+        "level": 70,
+        "color": "blue",
+        "icon": "typescript.png"
+      },
+      {
+        "name": "React",
+        "level": 90,
+        "color": "lightblue",
+        "icon": "reactjs.png"
+      },
+      {
+        "name": "PHP",
+        "level": 60,
+        "color": "lightblue ",
+        "icon": "php.png"
+      },
+      {
+        "name": "Java",
+        "level": 80,
+        "color": "orange",
+        "icon": "java.png"
+      },
+      {
+        "name": "Python",
+        "level": 30,
+        "color": "yellow",
+        "icon": "python.png"
+      },
+      {
+        "name": "C",
+        "level": 70,
+        "color": "blue",
+        "icon": "c.png"
+      },
+      {
+        "name": "git",
+        "level": 60,
+        "color": "darkred",
+        "icon": "git.png"
+      },
+      {
+        "name": "Unreal Engine",
+        "level": 50,
+        "color": "purple-300",
+        "icon": "ue.png"
+      },
+      {
+        "name": "mySQL",
+        "level": 40,
+        "color": "yellow",
+        "icon": "mysql.png"
+      },
+      {
+        "name": "MongoDB",
+        "level": 30,
+        "color": "lightgreen",
+        "icon": "mongodb.png"
+      },
+      {
+        "name": "Node.js",
+        "level": 60,
+        "color": "lightgreen",
+        "icon": "nodejs.png"
+      },
+      {
+        "name": "Vue.js",
+        "level": 30,
+        "color": "lightgreen",
+        "icon": "vuejs.png"
+      },
+      {
+        "name": "Angular",
+        "level": 50,
+        "color": "darkred",
+        "icon": "angular.png"
+      },
+      {
+        "name": "Docker",
+        "level": 50,
+        "color": "lightblue",
+        "icon": "docker.png"
+      },
+      {
+        "name": "Blender",
+        "level": 40,
+        "color": "orange",
+        "icon": "blender.png"
+      }
+    ]
+  },
+  "experiences": {
+    "title": "Experiences",
+    "noexperiencedesc": "No professional experience yet",
+    "noexperiencetext": "It's up to you to change that!",
+    "button": "Contact me",
+    "items": [
+      {
+        "title": "2nd Year BUT Internship",
+        "date": "February 2024 - April 2024",
+        "place": "Armed Forces Ministry",
+        "link": "https://defense.gouv.fr/",
+        "image": "mda.jpg"
+      },
+      {
+        "title": "Apprenticeship - Software Development and Analysis of Unknown Satellite Signals",
+        "date": "September 2024 - September 2025",
+        "place": "Armed Forces Ministry",
+        "link": "https://defense.gouv.fr/",
+        "image": "mda.jpg"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "name": "E-commerce Site",
+        "description": "E-commerce site for a fictional company called \"Pages d'or\" specializing in book sales. Developed with PHP, Tailwind CSS, and JavaScript, the site is hosted on a server at IUT Blagnac.",
+        "link": "http://193.54.227.208/~saephp06/",
+        "tags": [
+          {
+            "name": "php",
+            "color": "purple-tag"
+          },
+          {
+            "name": "tailwind",
+            "color": "blue-tag"
+          },
+          {
+            "name": "javascript",
+            "color": "yellow-tag"
+          },
+          {
+            "name": "mysql",
+            "color": "orange-tag"
+          }
+        ],
+        "image": "e-commerce.png",
+        "source_code_link": ""
+      },
+      {
+        "name": "Web Portfolio",
+        "description": "Portfolio developed with React, Typescript, and Tailwind CSS. The site is responsive and hosted on Vercel. This is the website you are currently on !",
+        "link": "https://antoine-leboucher.fr",
+        "tags": [
+          {
+            "name": "react",
+            "color": "blue-tag"
+          },
+          {
+            "name": "typescript",
+            "color": "dark-blue-tag"
+          },
+          {
+            "name": "tailwind",
+            "color": "blue-tag"
+          },
+          {
+            "name": "framer-motion",
+            "color": "pink-tag"
+          }
+        ],
+        "image": "portfolio.png",
+        "source_code_link": "https://github.com/Antwannnn/react-portfolio"
+      },
+      {
+        "name": "Memory Game",
+        "description": "JavaFX application that allows playing the Memory game. The game consists of 16 cards that are flipped face down. The goal is to find matching pairs of cards in as few moves as possible.",
+        "link": null,
+        "tags": [
+          {
+            "name": "java",
+            "color": "orange-tag"
+          },
+          {
+            "name": "javafx",
+            "color": "red-tag"
+          }
+        ],
+        "image": "memory.png",
+        "source_code_link": "https://github.com/Antwannnn/Memory-Game"
+      },
+      {
+        "name": "Bank Agency",
+        "description": "Java application that allows managing customer bank accounts as well as employee accounts of a bank agency.",
+        "link": null,
+        "tags": [
+          {
+            "name": "java",
+            "color": "orange-tag"
+          },
+          {
+            "name": "javafx",
+            "color": "red-tag"
+          },
+          {
+            "name": "oracle-sql",
+            "color": "pink-tag"
+          }
+        ],
+        "image": "bank.png",
+        "source_code_link": "https://github.com/IUT-Blagnac/sae2023-bank-1b3"
+      },
+      {
+        "name": "3D Horror Game Prototype",
+        "description": "3D horror game prototype developed with Unreal Engine 4. Basic mechanics and environment interactions implemented.",
+        "link": "https://drive.google.com/file/d/1N7xE_k6AQu7aGOEWx7CNY6airpYlPMW-/view?usp=drive_link",
+        "tags": [
+          {
+            "name": "c++",
+            "color": "dark-blue-tag"
+          },
+          {
+            "name": "unreal-engine-4",
+            "color": "purple-tag"
+          },
+          {
+            "name": "blueprint",
+            "color": "blue-tag"
+          }
+        ],
+        "image": "horrorgame.png",
+        "source_code_link": "https://github.com/Antwannnn/TheForgottenWords_SourceCode/tree/main"
+      },
+      {
+        "name": "Fullstack showcase website for Emcaffe",
+        "description": "Showcase website created as part of a university project for the company Emcaffe." ,
+        "link": "https://emcaffe.vercel.app/",
+        "tags": [
+          {
+            "name": "react",
+            "color": "blue-tag"
+          },
+          {
+            "name": "javascript",
+            "color": "yellow-tag"
+          },
+          {
+            "name": "tailwind",
+            "color": "blue-tag"
+          },
+          {
+            "name": "supabase",
+            "color": "green-tag"
+          }
+        ],
+        "image": "emcaffe.png",
+        "source_code_link": null
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact me",
+    "subtitle": "If you have any questions or would like to work with me.",
+    "nameplaceholder": "Your name",
+    "surnameplaceholder": "Your surname",
+    "emailplaceholder": "your.email@address.here",
+    "messageplaceholder": "Your message",
+    "button": "Send"
+  }
+}
