@@ -18,6 +18,12 @@ type NavLinkProps = {
   children?: React.ReactNode;
 }
 
+interface NavLink {
+  id: number;
+  name: string;
+  path : string;
+}
+
 const appearVariants = {
   hidden: {
     opacity: 0,
@@ -59,6 +65,8 @@ const NavBar = () => {
   const appear = useAnimation();
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 640px)' })
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const items = t('navlinks', { returnObjects: true }) as NavLink[];
 
   const langToCountryMap: { [key: string]: string } = {
     "en-US": "US",
@@ -120,7 +128,7 @@ const NavBar = () => {
             </NavLink>
           </div>
           <ul className="flex flex-col w-full">
-            {t('navlinks').map((link) => (
+            {items.map((link) => (
               <li key={link.id} className="flex items-center w-full justify-center h-16">
                 <NavLink
                   path={link.path}

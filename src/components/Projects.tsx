@@ -1,9 +1,19 @@
-import { FromLeftDiv, FromRightDiv } from "../Motion/MotionElements";
+import { FromLeftDiv, FromRightDiv, FromBottomDiv } from "../Motion/MotionElements";
 import { CardBody, CardContainer, CardItem } from "./subcomponents/3DCard";
 import { useTranslation } from "react-i18next";
 
+interface Project {
+  name: string;
+  description: string;
+  image: string;
+  link?: string;
+  source_code_link?: string;
+}
+
 const Projects = () => {
   const { t } = useTranslation("translation", { keyPrefix: "projects" });
+
+  const items = t("items", { returnObjects: true }) as Project[];
 
   return (
     <FromLeftDiv
@@ -12,12 +22,14 @@ const Projects = () => {
     >
       <h1 className="text-5xl">{t("title")}</h1>
 
-      <FromRightDiv
-        transition={{ duration: 0.5, type: "spring", delay: 0.5 }}
-        className="flex flex-wrap w-full items-center gap-10 justify-center"
-      >
-        {t("items").map((project, index) => (
-          <CardContainer className="inter-var">
+      <FromBottomDiv className="flex flex-wrap justify-center gap-10">
+      {items.map((project, index) => (
+        <FromRightDiv
+          key={index}
+          transition={{ duration: 0.5, type: "spring", delay: index / 10 }}
+          className=""
+        >
+          <CardContainer className="inter-var" key={index}>
             <CardBody className="bg-primary bg-opacity-10 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
               <CardItem
                 translateZ="50"
@@ -40,29 +52,35 @@ const Projects = () => {
                 />
               </CardItem>
               <div className="flex justify-between items-center mt-20">
-                {project.source_code_link && <CardItem
-                  translateZ={20}
-                  as={"a"}
-                  href={project.source_code_link}
-                  target="__blank"
-                  className="px-4 py-2 hover:border-[1px] rounded-xl text-xs font-normal text-white"
-                >
-                  Sources
-                </CardItem>}
-                {project.link && <CardItem
-                  translateZ={20}
-                  as="a"
-                  target="__blank"
-                  href={project.link}
-                  className="px-4 py-2 hover:border-[1px] border-opacity-30 hover:border-white rounded-xl bg-black text-white text-xs font-bold"
-                >
-                  Link
-                </CardItem>}
+                {project.source_code_link && (
+                  <CardItem
+                    translateZ={20}
+                    as={"a"}
+                    href={project.source_code_link}
+                    target="__blank"
+                    className="px-4 py-2 hover:border-[1px] rounded-xl text-xs font-normal text-white"
+                  >
+                    Sources
+                  </CardItem>
+                )}
+                {project.link && (
+                  <CardItem
+                    translateZ={20}
+                    as="a"
+                    target="__blank"
+                    href={project.link}
+                    className="px-4 py-2 hover:border-[1px] border-opacity-30 hover:border-white rounded-xl bg-black text-white text-xs font-bold"
+                  >
+                    Link
+                  </CardItem>
+                )}
               </div>
             </CardBody>
           </CardContainer>
-        ))}
-      </FromRightDiv>
+        </FromRightDiv>
+      ))}
+
+      </FromBottomDiv>
 
       <h2 className="text-xl sm:text-2xl w-5/6 text-center">
         Nota Bene : Les liens ci-dessus peuvent être indisponibles ou morts
