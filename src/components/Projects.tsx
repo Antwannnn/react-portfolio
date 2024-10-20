@@ -1,5 +1,4 @@
 import { FromLeftDiv, FromRightDiv } from "../Motion/MotionElements";
-import { ProjectCase } from "./subcomponents/ProjectCase";
 import { CardBody, CardContainer, CardItem } from "./subcomponents/3DCard";
 import { useTranslation } from "react-i18next";
 
@@ -46,7 +45,7 @@ const Projects = () => {
                   as={"a"}
                   href={project.source_code_link}
                   target="__blank"
-                  className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                  className="px-4 py-2 hover:border-[1px] rounded-xl text-xs font-normal text-white"
                 >
                   Sources
                 </CardItem>}
@@ -55,7 +54,7 @@ const Projects = () => {
                   as="a"
                   target="__blank"
                   href={project.link}
-                  className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                  className="px-4 py-2 hover:border-[1px] border-opacity-30 hover:border-white rounded-xl bg-black text-white text-xs font-bold"
                 >
                   Link
                 </CardItem>}
