@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { Analytics } from "@vercel/analytics/react"
 import { BrowserRouter, Route, Routes, useLocation, createBrowserRouter } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { Home, About, Skills, Experiences, Projects, Contact, NavBar } from './components/Components';
@@ -28,6 +28,7 @@ const AppRouter: React.FC = () => {
               <Route key={route.path} path={route.path} element={route.element} />
             ))}
           </Routes>
+          <Analytics />
         </AnimatePresence>
       </main>
     </>
