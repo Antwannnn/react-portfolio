@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 interface Skill {
   name: string;
   icon: string;
-  level: string;
+  level: number;
   color: string;
 }
 
