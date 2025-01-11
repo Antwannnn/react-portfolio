@@ -16,6 +16,11 @@
       "path": "/skills"
     },
     {
+      "id": "butskills",
+      "name": "Compétences BUT",
+      "path": "/butskills"
+    },
+    {
       "id": "experiences",
       "name": "Experiences",
       "path": "/experiences"
@@ -99,13 +104,13 @@
       {
         "name": "PHP",
         "level": 60,
-        "color": "purple",
+        "color": "pink",
         "icon": "php.png"
       },
       {
         "name": "Java",
         "level": 80,
-        "color": "red",
+        "color": "orange",
         "icon": "java.png"
       },
       {
@@ -116,20 +121,20 @@
       },
       {
         "name": "C",
-        "level": 70,
+        "level": 50,
         "color": "blue",
         "icon": "c.png"
       },
       {
         "name": "git",
         "level": 60,
-        "color": "red",
+        "color": "orange",
         "icon": "git.png"
       },
       {
         "name": "Unreal Engine",
         "level": 50,
-        "color": "purple",
+        "color": "pink",
         "icon": "ue.png"
       },
       {
@@ -141,25 +146,25 @@
       {
         "name": "MongoDB",
         "level": 30,
-        "color": "green",
+        "color": "lightgreen",
         "icon": "mongodb.png"
       },
       {
         "name": "Node.js",
         "level": 60,
-        "color": "green",
+        "color": "lightgreen",
         "icon": "nodejs.png"
       },
       {
         "name": "Vue.js",
         "level": 30,
-        "color": "green",
+        "color": "lightgreen",
         "icon": "vuejs.png"
       },
       {
         "name": "Angular",
         "level": 50,
-        "color": "red",
+        "color": "orange",
         "icon": "angular.png"
       },
       {
@@ -186,12 +191,14 @@
         "title": "Stage de 2ème année BUT",
         "date": "Fevrier 2024 - Avril 2024",
         "place": "Ministère des Armées",
+        "link": "https://www.defense.gouv.fr/",
         "image": "mda.jpg"
       },
       {
         "title": "Alternance - Développement Logiciel et Analyse de signaux satell  itaires inconnus",
         "date": "Septembre 2024 - Septembre 2025",
         "place": "Ministère des Armées",
+        "link": "https://www.defense.gouv.fr/",
         "image": "mda.jpg"
       }
     ]
@@ -343,5 +350,33 @@
     "emailplaceholder": "votre.adresse@email.ici",
     "messageplaceholder": "Votre message",
     "button": "Envoyer"
+  },
+  "butskills": {
+    "title": "Compétences BUT",
+    "subtitle": "Parcours Réalisation d'applications",
+    "description": "Les compétences acquises durant le BUT Informatique",
+    "skills": [
+      {
+        "category": "Réaliser",
+        "items": [
+          { "name": "Développement", "description": "Réaliser un développement d'application" },
+          { "name": "Optimisation", "description": "Optimiser des applications informatiques" }
+        ]
+      },
+      {
+        "category": "Administrer",
+        "items": [
+          { "name": "Systèmes", "description": "Administrer des systèmes informatiques communicants complexes" },
+          { "name": "Données", "description": "Gérer des données de l'information" }
+        ]
+      },
+      {
+        "category": "Gérer",
+        "items": [
+          { "name": "Projet", "description": "Conduire un projet informatique" },
+          { "name": "Équipe", "description": "Travailler dans une équipe informatique" }
+        ]
+      }
+    ]
   }
 }

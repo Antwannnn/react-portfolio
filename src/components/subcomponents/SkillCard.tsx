@@ -34,8 +34,8 @@ const SkillCard: React.FC<SkillCardProps> = ({ tech = { name: 'None', img: './im
     }
 
     return (
-        <motion.div className="card-inner w-44 h-full flex justify-center items-center" onMouseEnter={() => controls.start('visible')}
-            onMouseLeave={() => controls.start('hidden')}>
+        <motion.div className="card-inner w-44 h-full flex justify-center items-center" onHoverStart={() => controls.start('visible')}
+            onHoverEnd={() => controls.start('hidden')}>
             <div className="flex w-4/6 justify-center flex-col gap-3 items-center">
                 <img className="w-[50px] opacity-60" src={`./assets/tech/${tech.img}`} alt={tech.name} />
                 <div className="flex flex-col items-center gap-5 w-full">

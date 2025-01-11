@@ -51,9 +51,7 @@ const Experiences = () => {
                 <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100">
                   {experience.title}
                 </h3>
-                {isTabletOrMobile && (
-                  <h4 className="text-primary">@ {experience.place}</h4>
-                )}
+
                 <div className="text-base !m-0 !p-0 font-normal">
                   <span className="text-secondary ">{experience.date}</span>
                 </div>

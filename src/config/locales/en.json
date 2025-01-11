@@ -16,6 +16,11 @@
       "path": "/skills"
     },
     {
+      "id": "butskills",
+      "name": "BUT Skills",
+      "path": "/butskills"
+    },
+    {
       "id": "experiences",
       "name": "Experiences",
       "path": "/experiences"
@@ -99,7 +104,7 @@
       {
         "name": "PHP",
         "level": 60,
-        "color": "lightblue ",
+        "color": "pink",
         "icon": "php.png"
       },
       {
@@ -116,20 +121,20 @@
       },
       {
         "name": "C",
-        "level": 70,
+        "level": 50,
         "color": "blue",
         "icon": "c.png"
       },
       {
         "name": "git",
         "level": 60,
-        "color": "darkred",
+        "color": "orange",
         "icon": "git.png"
       },
       {
         "name": "Unreal Engine",
         "level": 50,
-        "color": "purple-300",
+        "color": "pink",
         "icon": "ue.png"
       },
       {
@@ -159,13 +164,13 @@
       {
         "name": "Angular",
         "level": 50,
-        "color": "darkred",
+        "color": "orange",
         "icon": "angular.png"
       },
       {
         "name": "Docker",
         "level": 50,
-        "color": "lightblue",
+        "color": "blue",
         "icon": "docker.png"
       },
       {
@@ -345,5 +350,33 @@
     "emailplaceholder": "your.email@address.here",
     "messageplaceholder": "Your message",
     "button": "Send"
+  },
+  "butskills": {
+    "title": "BUT Skills",
+    "subtitle": "Application Development Track",
+    "description": "Skills acquired during the BUT Computer Science degree",
+    "skills": [
+      {
+        "category": "Development",
+        "items": [
+          { "name": "Development", "description": "Develop applications" },
+          { "name": "Optimization", "description": "Optimize computer applications" }
+        ]
+      },
+      {
+        "category": "Administration",
+        "items": [
+          { "name": "Systems", "description": "Administer complex communicating computer systems" },
+          { "name": "Data", "description": "Manage information data" }
+        ]
+      },
+      {
+        "category": "Management",
+        "items": [
+          { "name": "Project", "description": "Lead IT projects" },
+          { "name": "Team", "description": "Work in an IT team" }
+        ]
+      }
+    ]
   }
 }

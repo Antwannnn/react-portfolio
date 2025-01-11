@@ -2,7 +2,7 @@ import React from 'react';
 import { Analytics } from "@vercel/analytics/react"
 import { BrowserRouter, Route, Routes, useLocation, createBrowserRouter } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-import { Home, About, Skills, Experiences, Projects, Contact, NavBar } from './components/Components';
+import { Home, About, Skills, Experiences, Projects, Contact, NavBar, ButSkills } from './components/Components';
 import './styles/styles.css';
 import './config/i18n';
 
@@ -49,9 +49,14 @@ const routes = [
     element: <Skills />,
   },
   {
+    path: '/butskills',
+    element: <ButSkills />,
+  },
+  {
     path: '/experiences',
     element: <Experiences />,
   },
+
   {
     path: '/projects',
     element: <Projects />,
