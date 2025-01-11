@@ -205,6 +205,7 @@
   },
   "projects": {
     "title": "Projets",
+    "subtitle": "Voici quelques-uns des projets que j'ai réalisés au cours de mes études et de mes expériences professionnelles mais également des projets personnels.",
     "items": [
       {
         "name": "Site E-commerce",

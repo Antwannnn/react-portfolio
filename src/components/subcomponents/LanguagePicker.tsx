@@ -41,7 +41,7 @@ const LanguagePicker = ({ selectedCountryCode, setSelectedCountryCode } : {selec
           </svg>
         </button>
         {showDropdown && (
-          <div className="absolute flex flex-col gap-2 right-0 mt-2 bg-white shadow-lg rounded-md">
+          <div className="absolute flex flex-col gap-2 right-0 mt-2 bg-background-secondary shadow-lg rounded-md">
             <button
               id="fr"
               className="flex items-center p-2 bg-primary/10 rounded-md hover:bg-primary/25 duration-300"

@@ -21,7 +21,7 @@ const Projects = () => {
       transition={{ type: "spring", duration: 0.5 }}
     >
       <h1 className="text-5xl">{t("title")}</h1>
-
+      <p className="text-xl text-secondary">{t("subtitle")}</p>
       <FromBottomDiv className="flex flex-wrap justify-center gap-10">
       {items.map((project, index) => (
         <FromRightDiv
@@ -33,7 +33,7 @@ const Projects = () => {
             <CardBody className="bg-background-secondary bg-opacity-50  relative group/card hover:shadow-2xl hover:shadow-primary/[0.1] duration-300 border-primary/[0.1] w-[30rem] sm:w-[30rem] h-auto rounded-xl p-6 border">
               <CardItem
                 translateZ="50"
-                className="text-xl font-bold text-primary"
+                className="text-xl !text-center font-bold text-primary"
               >
                 {project.name}
               </CardItem>
