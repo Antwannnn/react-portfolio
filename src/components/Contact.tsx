@@ -47,7 +47,7 @@ const Contact = ()=> {
                 <input type="text" required placeholder={t('nameplaceholder')} name="name"/>
                 <input className="col-span-2" type="email" placeholder={t('emailplaceholder')} name="email"/>
                 <textarea className="col-span-2 bg-opacity-60" name="message" id="message" rows={10} placeholder={t('messageplaceholder')}/>
-                <button className="button-red col-span-2 py-4">{t('button')}</button>
+                <button className="button col-span-2 py-4">{t('button')}</button>
             </form>
         </FromTopDiv>
     );

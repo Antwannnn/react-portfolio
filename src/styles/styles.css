@@ -4,6 +4,35 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+:root {
+    /* Couleurs du thème clair */
+    --primary: 53 59 60;    
+    --secondary: 132 106 106;  
+    --accent-1: 162 153 158;   
+    --accent-2: 132 106 106;   
+    --background: 238 240 242;  
+    --background-secondary: 202 203 205;
+    --background-light: 238, 240, 242;
+    --background-dark: 53, 59, 60;
+    --clip-position: 0%;
+  }
+  
+  .dark {
+    /* Couleurs du thème sombre */
+    --primary: 238 240 242;    
+    --secondary: 198 199 196;  
+    --accent-1: 162 153 158;   
+    --accent-2: 132 106 106;   
+    --background: 53 59 60;  
+    --background-secondary: 64 71 72;
+  }
+  
+  /* Appliquer la couleur de fond par défaut */
+  body {
+    @apply bg-background;
+    transition: background-color 1s ease-in-out;
+  }
+
 * {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
@@ -12,57 +41,57 @@
     scroll-behavior: smooth;
 }
 
-.bg-gradient-dark-red {
-    background: -webkit-linear-gradient(180deg, #7D0A0A 0%, #610707 100%);
-    background: linear-gradient(180deg, #7D0A0A 0%, #610707 100%);
+.bg-gradient-dark {
+    background: -webkit-linear-gradient(180deg, var(--accent) 0%, var(--background) 100%);
+    background: linear-gradient(180deg, var(--accent) 0%, var(--background) 100%);
 }
 
-.bg-gradient-red {
-    background: -webkit-linear-gradient(180deg, #BF3131 0%, #9c2727 100%);
-    background: linear-gradient(180deg, #BF3131 0%, #9c2727 100%);
+.bg-gradient {
+    background: -webkit-linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
+    background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
 }
 
-.button-red {
-    background: #7d0a0a6c;
+.button {
+    @apply bg-background-secondary/50;
     border-radius: 10px;
     transition: 0.3s;
-    color: #F3EDC8;
+    @apply text-primary;
 }
 
-.button-red:hover {
-    background: #7d0a0a8e;
+.button:hover {
+    @apply bg-background-secondary;
     border-radius: 10px;
-    color: #F3EDC8;
+    @apply text-primary;
 }
 
 .separator {
-    background-color: #EAD196;
+    @apply bg-secondary;
     height: 1px;
 }
 
-.strong{
+.strong {
     font-weight: bold;
-    color: #EAD196
+    color: var(--secondary)
 }
 
-.yellow-tag{
-    background: #9c952e;
+.yellow-tag {
+    background: var(--accent);
 }
 
 .orange-tag {
-    background: #ed703e;
+    background: var(--tertiary);
 }
 
 .red-tag {
-    background: #b74444;
+    background: var(--accent);
 }
 
 .dark-blue-tag {
-    background: #3e5bed;
+    background: var(--background);
 }
 
 .blue-tag {
-    background: #3e9bed;
+    background: var(--tertiary);
 }
 
 .purple-tag {
@@ -74,9 +103,9 @@
 }
 
 textarea, input{
-    background: #7d0a0a75;
+    @apply bg-background-secondary;
     border-radius: 10px;
-    
+    @apply text-primary;
     resize: none;
     border: none;
     padding: 10px;
@@ -87,5 +116,34 @@ textarea:focus, input:focus{
 }
 
 textarea::placeholder, input::placeholder{
-    color: #f3edc866;
+    @apply text-primary/60;
 }
+
+/* Ajouter avec vos autres styles */
+.theme-transition-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    clip-path: circle(0% at var(--clip-position) 50%);
+    background-color: rgb(var(--background-dark));
+    z-index: 9999;
+    pointer-events: none;
+    transition: clip-path 0.6s ease-in-out;
+}
+
+.theme-transition-overlay.expanding {
+    clip-path: circle(150% at var(--clip-position) 50%);
+}
+
+.theme-transition-overlay.to-dark {
+    background-color: rgb(var(--background-dark));
+  }
+  
+  .theme-transition-overlay.to-light {
+    background-color: rgb(var(--background-light));
+}
+
+
+

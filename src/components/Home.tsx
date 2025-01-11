@@ -17,7 +17,7 @@ const Home = () => {
           <h1 className="text-5xl strong">{t('title')}</h1>
           <FromRightDiv className="flex flex-col gap-4 items-center md:items-start" transition={{ type: 'spring', delay: 0.5, duration: 0.5 }}>
             <h2 className="text-xl">{t('description')}</h2>
-            <button onClick={() => navigate("/about")} className="w-fit px-5 py-3 button-red">{t('button')}</button>
+            <button onClick={() => navigate("/about")} className="w-fit px-5 py-3 button">{t('button')}</button>
           </FromRightDiv>
         </div>
         <img className="w-80 rounded-full" src={`./assets/${t('photo')}`} alt="" />

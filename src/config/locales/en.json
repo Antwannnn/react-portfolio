@@ -109,7 +109,7 @@
       },
       {
         "name": "Java",
-        "level": 80,
+        "level": 90,
         "color": "orange",
         "icon": "java.png"
       },
@@ -139,7 +139,7 @@
       },
       {
         "name": "mySQL",
-        "level": 40,
+        "level": 80,
         "color": "yellow",
         "icon": "mysql.png"
       },
@@ -366,7 +366,7 @@
       {
         "category": "Administration",
         "items": [
-          { "name": "Systems", "description": "Administer complex communicating computer systems" },
+          { "name": "Systems", "description": "Administrate complex communicating computer systems" },
           { "name": "Data", "description": "Manage information data" }
         ]
       },

@@ -2,7 +2,6 @@ import React from 'react';
 import { FromTopDiv, FromBottomDiv } from '../Motion/MotionElements';
 import { useTranslation } from "react-i18next";
 import { motion } from 'framer-motion';
-import { useMediaQuery } from 'react-responsive';
 
 interface SkillCardProps {
     category: string;
@@ -11,7 +10,6 @@ interface SkillCardProps {
 }
 
 const SkillCard: React.FC<SkillCardProps> = ({ category, items, ownIndex }) => {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
   
   return (
     <motion.div

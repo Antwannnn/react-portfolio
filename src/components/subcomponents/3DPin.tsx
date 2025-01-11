@@ -58,7 +58,7 @@ export const PinContainer = ({
               ? "translate(-50%,-50%) rotateX(40deg) scale(0.8)" 
               : transform,
           }}
-          className="absolute left-1/2 p-4 top-1/2  flex justify-start items-start  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-black border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden"
+          className="absolute left-1/2 p-4 top-1/2  flex justify-start items-start  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-primary/10 border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden"
         >
           <div className={cn(" relative z-50 ", className)}>{children}</div>
         </div>
@@ -128,7 +128,7 @@ export const PinPerspective = ({
                 repeat: Infinity,
                 delay: 0,
               }}
-              className="absolute left-1/2 top-1/2  h-[11.25rem] w-[11.25rem] rounded-[50%] bg-cherryred/50 shadow-[0_8px_16px_rgb(255_255_255/0.4)]"
+              className="absolute left-1/2 top-1/2  h-[11.25rem] w-[11.25rem] rounded-[50%] bg-secondary/50 shadow-[0_8px_16px_rgb(255_255_255/0.4)]"
             ></motion.div>
             <motion.div
               initial={{
@@ -148,7 +148,7 @@ export const PinPerspective = ({
                 repeat: Infinity,
                 delay: 2,
               }}
-              className="absolute left-1/2 top-1/2  h-[11.25rem] w-[11.25rem] rounded-[50%] bg-cherryred/30 shadow-[0_8px_16px_rgb(255_255_255/0.4)]"
+              className="absolute left-1/2 top-1/2  h-[11.25rem] w-[11.25rem] rounded-[50%] bg-secondary/30 shadow-[0_8px_16px_rgb(255_255_255/0.4)]"
             ></motion.div>
             <motion.div
               initial={{
@@ -168,7 +168,7 @@ export const PinPerspective = ({
                 repeat: Infinity,
                 delay: 4,
               }}
-              className="absolute left-1/2 top-1/2  h-[11.25rem] w-[11.25rem] rounded-[50%] bg-cherryred/10 shadow-[0_8px_16px_rgb(255_255_255/0.4)]"
+              className="absolute left-1/2 top-1/2  h-[11.25rem] w-[11.25rem] rounded-[50%] bg-secondary/10 shadow-[0_8px_16px_rgb(255_255_255/0.4)]"
             ></motion.div>
           </>
         </div>

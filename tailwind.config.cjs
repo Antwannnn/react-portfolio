@@ -7,14 +7,15 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: "class",
   theme: {
-    extend: {},
-    colors: {
-      primary: '#F3EDC8',
-      secondary: '#EAD196',
-      tertiary: '#c1b37b',
-
-      cherryred: '#BF3131',
-      darkcherryred: '#7D0A0A',
+    extend: {
+      colors: {
+        primary: "rgb(var(--primary) / <alpha-value>)",
+        secondary: "rgb(var(--secondary) / <alpha-value>)",
+        'accent-1': "rgb(var(--accent-1) / <alpha-value>)",
+        'accent-2': "rgb(var(--accent-2) / <alpha-value>)",
+        background: "rgb(var(--background) / <alpha-value>)",
+        'background-secondary': "rgb(var(--background-secondary) / <alpha-value>)",
+      },
     },
   },
   plugins: [addVariablesForColors],

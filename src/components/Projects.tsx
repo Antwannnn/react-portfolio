@@ -30,17 +30,17 @@ const Projects = () => {
           className=""
         >
           <CardContainer className="inter-var" key={index}>
-            <CardBody className="bg-primary bg-opacity-10 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+            <CardBody className="bg-background-secondary bg-opacity-50  relative group/card hover:shadow-2xl hover:shadow-primary/[0.1] duration-300 border-primary/[0.1] w-[30rem] sm:w-[30rem] h-auto rounded-xl p-6 border">
               <CardItem
                 translateZ="50"
-                className="text-xl font-bold text-neutral-600 dark:text-white"
+                className="text-xl font-bold text-primary"
               >
                 {project.name}
               </CardItem>
               <CardItem
                 as="p"
                 translateZ="60"
-                className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                className="text-primary text-sm max-w-sm mt-2"
               >
                 {project.description}
               </CardItem>
@@ -58,7 +58,7 @@ const Projects = () => {
                     as={"a"}
                     href={project.source_code_link}
                     target="__blank"
-                    className="px-4 py-2 hover:border-[1px] rounded-xl text-xs font-normal text-white"
+                    className="px-4 py-2 hover:border-[1px] rounded-xl text-xs font-normal text-primary"
                   >
                     Sources
                   </CardItem>
@@ -69,7 +69,7 @@ const Projects = () => {
                     as="a"
                     target="__blank"
                     href={project.link}
-                    className="px-4 py-2 hover:border-[1px] border-opacity-30 hover:border-white rounded-xl bg-black text-white text-xs font-bold"
+                    className="px-4 py-2 hover:border-[1px] border-opacity-30 hover:border-primary rounded-xl bg-background text-primary text-xs font-bold"
                   >
                     Link
                   </CardItem>

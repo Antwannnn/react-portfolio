@@ -47,7 +47,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ tech = { name: 'None', img: './im
                             initial={'hidden'}
                             animate={controls}
                             variants={ProgressBarVariants}
-                            className={`level h-full opacity-40`} style={{ background: `${color}` }}></motion.div>
+                            className={`level h-full opacity-100`} style={{ background: `${color}` }}></motion.div>
                     </div>
                 </div>
             </div>

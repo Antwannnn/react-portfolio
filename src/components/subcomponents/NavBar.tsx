@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useNavigate, useMatch } from 'react-router-dom';
 import { motion, useAnimation } from 'framer-motion';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import close from '/assets/close.svg';
-import menu from '/assets/menu.svg';
-import logo from '/assets/logo.png';
+import { Bars3CenterLeftIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import logoWhite from '/assets/logowhite.png';
+import logoBlack from '/assets/logoblack.png';
 import LanguagePicker from './LanguagePicker';
 import { useMediaQuery } from 'react-responsive';
 
@@ -65,6 +65,12 @@ const NavBar = () => {
   const appear = useAnimation();
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 640px)' })
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [theme, setTheme] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+    }
+    return 'light';
+  });
 
   const items = t('navlinks', { returnObjects: true }) as NavLink[];
 
@@ -92,6 +98,21 @@ const NavBar = () => {
     setIsMenuOpen(!isMenuOpen);
   }
 
+  const navRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (isTabletOrMobile && isMenuOpen && navRef.current && !navRef.current.contains(event.target as Node)) {
+        toggleMenu();
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isMenuOpen, isTabletOrMobile]);
+
   useEffect(() => {
     if(!isTabletOrMobile) {
       appear.start('visible');
@@ -111,20 +132,39 @@ const NavBar = () => {
 
   }, [isTabletOrMobile, appear])
 
+  useEffect(() => {
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.attributeName === 'class') {
+          setTheme(document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+        }
+      });
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class']
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <button className="sm:hidden cursor-pointer z-30 fixed left-3 top-1 opacity-75" onClick={() => toggleMenu()}>
-        <img className="w-[30px] h-[30px]" src= {isMenuOpen ? close : menu} alt="" />
+        {isMenuOpen ? <XMarkIcon className="w-[30px] text-primary h-[30px]" /> : <Bars3CenterLeftIcon className="w-[30px] text-primary h-[30px]" />}
       </button>
-      <motion.div className={`min-h-full min-w-56 fixed sm:relative ${isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'} sm:pointer-events-auto bg-darkcherryred bg-opacity-60 z-20`}
-      initial= {'hidden'}
-      variants={appearVariants}
-      animate={appear}
+      <motion.div 
+        ref={navRef}
+        className={`min-h-full min-w-56 fixed sm:relative ${isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'} sm:pointer-events-auto bg-background-secondary/20 ${isMenuOpen ? '!bg-background-secondary/70' : 'bg-background-secondary/20'} z-20`}
+        initial={'hidden'}
+        variants={appearVariants}
+        animate={appear}
       >
         <nav className="flex h-full min-w-56 flex-col gap-10 items-center justify-start relative sm:fixed">
           <div className="flex justify-center-center py-10">
-            <NavLink path="/" className="opacity-70 hover:opacity-100 transition-opacity duration-300" onClick={() => { navigate("/") }}>
-              <img className="w-[80px]" src={logo} alt="" />
+            <NavLink path="/" className="opacity-70 hover:opacity-100 transition-opacity duration-300" onClick={() => { navigate("/"); if(isTabletOrMobile) { toggleMenu() } }}>
+              <img className="w-[80px]" src={theme === 'dark' ? logoWhite : logoBlack} alt="logo" />
             </NavLink>
           </div>
           <ul className="flex flex-col w-full">

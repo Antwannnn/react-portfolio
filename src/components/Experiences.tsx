@@ -33,7 +33,7 @@ const Experiences = () => {
           <h2 className="text-3xl">{t('noexperiencedesc')}</h2>
           <h2 className="text-2xl">
             {t('noexperiencetext')}{" "}
-            <button className="text-lg button-red px-3 py-2" onClick={() => navigate("/contact")}>
+            <button className="text-lg button px-3 py-2" onClick={() => navigate("/contact")}>
               {t('button')}
             </button>
           </h2>
@@ -48,7 +48,7 @@ const Experiences = () => {
               href={experience.link}
             >
               <div className="flex basis-full flex-col p-4 tracking-tight text-primary sm:basis-1/2 w-[20rem] h-[20rem] ">
-                <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100">
+                <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-primary">
                   {experience.title}
                 </h3>
 
