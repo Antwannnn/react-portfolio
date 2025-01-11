@@ -6,7 +6,6 @@ import { Home, About, Skills, Experiences, Projects, Contact, NavBar, ButSkills 
 import './styles/styles.css';
 import './config/i18n';
 import ThemeSwitcher from './components/ThemeSwitcher';
-import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const App = () => {
   useEffect(() => {
@@ -20,7 +19,6 @@ const App = () => {
         <AppRouter />
       </BrowserRouter>
       <ThemeSwitcher />
-      <SpeedInsights />
     </div>
   );
 }

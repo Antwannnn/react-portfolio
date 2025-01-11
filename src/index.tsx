@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/styles.css';
 import App from './App';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -9,6 +10,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
+    <SpeedInsights />
     <App />
   </React.StrictMode>
 );
