@@ -156,7 +156,7 @@ const NavBar = () => {
       </button>
       <motion.div 
         ref={navRef}
-        className={`min-h-full min-w-56 fixed sm:relative ${isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'} sm:pointer-events-auto bg-background-secondary/20 ${isMenuOpen ? '!bg-background-secondary/70' : 'bg-background-secondary/20'} z-20`}
+        className={`min-h-screen h-full min-w-56 fixed sm:relative ${isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'} sm:pointer-events-auto bg-background-secondary/20 ${isMenuOpen ? '!bg-background-secondary/70' : 'bg-background-secondary/20'} z-20 overflow-y-auto`}
         initial={'hidden'}
         variants={appearVariants}
         animate={appear}
@@ -185,7 +185,9 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
-          <LanguagePicker selectedCountryCode={selectedCountryCode} setSelectedCountryCode={setSelectedCountryCode} />
+          <div className="pb-6">
+            <LanguagePicker selectedCountryCode={selectedCountryCode} setSelectedCountryCode={setSelectedCountryCode} />
+          </div>
         </nav>
       </motion.div>
     </>

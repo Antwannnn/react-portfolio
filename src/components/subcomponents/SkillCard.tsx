@@ -18,10 +18,11 @@ type SkillCardProps = {
 const SkillCard: React.FC<SkillCardProps> = ({ tech = { name: 'None', img: './images/skills/default' }, description = 'None', color = '', level = 0 }) => {
 
     const controls = useAnimation();
+    const isMobile = window.innerWidth <= 768;
 
     const ProgressBarVariants = {
         hidden: {
-            width: 0,
+            width: isMobile ? level + '%' : 0,
         },
         visible: {
             width: level + '%',
@@ -34,8 +35,9 @@ const SkillCard: React.FC<SkillCardProps> = ({ tech = { name: 'None', img: './im
     }
 
     return (
-        <motion.div className="card-inner w-44 h-full flex justify-center items-center" onHoverStart={() => controls.start('visible')}
-            onHoverEnd={() => controls.start('hidden')}>
+        <motion.div className="card-inner w-44 h-full flex justify-center items-center" 
+            onHoverStart={() => !isMobile && controls.start('visible')}
+            onHoverEnd={() => !isMobile && controls.start('hidden')}>
             <div className="flex w-4/6 justify-center flex-col gap-3 items-center">
                 <img className="w-[50px] opacity-60" src={`./assets/tech/${tech.img}`} alt={tech.name} />
                 <div className="flex flex-col items-center gap-5 w-full">
@@ -44,10 +46,11 @@ const SkillCard: React.FC<SkillCardProps> = ({ tech = { name: 'None', img: './im
                     </div>
                     <div className="h-[3px] w-full bg-opacity-30 bg-[#383838]">
                         <motion.div
-                            initial={'hidden'}
+                            initial={isMobile ? 'visible' : 'hidden'}
                             animate={controls}
                             variants={ProgressBarVariants}
-                            className={`level h-full opacity-100`} style={{ background: `${color}` }}></motion.div>
+                            className={`level h-full opacity-100`} 
+                            style={{ background: `${color}` }}></motion.div>
                     </div>
                 </div>
             </div>

@@ -30,7 +30,7 @@ const Projects = () => {
           className=""
         >
           <CardContainer className="inter-var" key={index}>
-            <CardBody className="bg-background-secondary bg-opacity-50  relative group/card hover:shadow-2xl hover:shadow-primary/[0.1] duration-300 border-primary/[0.1] w-[30rem] sm:w-[30rem] h-auto rounded-xl p-6 border">
+            <CardBody className="bg-background-secondary bg-opacity-50  relative group/card hover:shadow-2xl hover:shadow-primary/[0.1] duration-300 border-primary/[0.1] w-[25rem] sm:w-[30rem] h-auto rounded-xl p-6 border">
               <CardItem
                 translateZ="50"
                 className="text-xl !text-center font-bold text-primary"
