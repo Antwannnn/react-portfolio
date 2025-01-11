@@ -30,7 +30,7 @@ const Projects = () => {
           className=""
         >
           <CardContainer className="inter-var" key={index}>
-            <CardBody className="bg-background-secondary bg-opacity-50  relative group/card hover:shadow-2xl hover:shadow-primary/[0.1] duration-300 border-primary/[0.1] w-[25rem] sm:w-[30rem] h-auto rounded-xl p-6 border">
+            <CardBody className="bg-background-secondary bg-opacity-50  relative group/card hover:shadow-2xl hover:shadow-primary/[0.1] duration-300 border-primary/[0.1] w-fit sm:w-[30rem] h-auto rounded-xl p-6 border">
               <CardItem
                 translateZ="50"
                 className="text-xl !text-center font-bold text-primary"
@@ -51,7 +51,7 @@ const Projects = () => {
                   alt="thumbnail"
                 />
               </CardItem>
-              <div className="flex justify-between items-center mt-20">
+              <div className="flex justify-between items-center mt-10">
                 {project.source_code_link && (
                   <CardItem
                     translateZ={20}

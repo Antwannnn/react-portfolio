@@ -156,13 +156,13 @@ const NavBar = () => {
       </button>
       <motion.div 
         ref={navRef}
-        className={`min-h-screen h-full min-w-56 fixed sm:relative ${isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'} sm:pointer-events-auto bg-background-secondary/20 ${isMenuOpen ? '!bg-background-secondary/70' : 'bg-background-secondary/20'} z-20 overflow-y-auto`}
+        className={`min-h-full min-w-56 fixed sm:relative ${isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'} sm:pointer-events-auto bg-background-secondary/20 ${isMenuOpen ? '!bg-background-secondary/70' : 'bg-background-secondary/20'} z-20`}
         initial={'hidden'}
         variants={appearVariants}
         animate={appear}
       >
-        <nav className="flex h-full min-w-56 flex-col gap-10 items-center justify-start relative sm:fixed">
-          <div className="flex justify-center-center py-10">
+        <nav className="flex h-full min-w-56 flex-col gap-5 sm:gap-10 items-center justify-start relative sm:fixed">
+          <div className="flex justify-center-center py-5 sm:py-10">
             <NavLink path="/" className="opacity-70 hover:opacity-100 transition-opacity duration-300" onClick={() => { navigate("/"); if(isTabletOrMobile) { toggleMenu() } }}>
               <img className="w-[80px]" src={theme === 'dark' ? logoWhite : logoBlack} alt="logo" />
             </NavLink>
@@ -185,9 +185,7 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
-          <div className="pb-6">
-            <LanguagePicker selectedCountryCode={selectedCountryCode} setSelectedCountryCode={setSelectedCountryCode} />
-          </div>
+          <LanguagePicker selectedCountryCode={selectedCountryCode} setSelectedCountryCode={setSelectedCountryCode} />
         </nav>
       </motion.div>
     </>

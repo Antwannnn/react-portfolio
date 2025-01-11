@@ -2,6 +2,7 @@ import React from 'react';
 import { FromTopDiv, FromBottomDiv } from '../Motion/MotionElements';
 import { useTranslation } from "react-i18next";
 import { motion } from 'framer-motion';
+import { useMediaQuery } from 'react-responsive';
 
 interface SkillCardProps {
     category: string;
@@ -15,10 +16,11 @@ interface SkillGroup {
 }
 
 const SkillCard: React.FC<SkillCardProps> = ({ category, items, ownIndex }) => {
+  const isMobile = useMediaQuery({ query: '(max-width: 640px)' });
   
   return (
     <motion.div
-      className="relative w-[300px] h-[400px] rounded-2xl p-6 backdrop-blur-md bg-white/10 hover:scale-105 transition-all duration-300 ease-in-out border-2 border-primary/0 hover:border-primary"
+      className="relative w-[300px] h-[400px] rounded-2xl p-6 backdrop-blur-md bg-background-secondary/20 hover:scale-105 transition-all duration-300 ease-in-out border-2 border-primary/0 hover:border-primary/50"
       transition={{
         duration: 0.3,
         ease: "easeInOut"
@@ -34,7 +36,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ category, items, ownIndex }) => {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: index * 0.2 + ownIndex / 3}}
-              className="bg-white/5 p-4 rounded-lg backdrop-blur-sm"
+              className={`${isMobile ? 'bg-primary/30' : 'bg-primary/5'} p-4 rounded-lg backdrop-blur-sm`}
             >
               <h4 className="text-lg font-semibold text-primary mb-2">{skill.name}</h4>
               <p className="text-sm text-primary/80">{skill.description}</p>
@@ -49,7 +51,6 @@ const SkillCard: React.FC<SkillCardProps> = ({ category, items, ownIndex }) => {
 const ButSkills = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'butskills' });
   
-  // Utiliser les traductions depuis le fichier JSON
   const skills = t('skills', { returnObjects: true }) as SkillGroup[];
 
   return (
