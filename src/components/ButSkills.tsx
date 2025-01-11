@@ -9,6 +9,11 @@ interface SkillCardProps {
     ownIndex: number;
 }
 
+interface SkillGroup {
+    category: string;
+    items: { name: string; description: string }[];
+}
+
 const SkillCard: React.FC<SkillCardProps> = ({ category, items, ownIndex }) => {
   
   return (
@@ -45,7 +50,7 @@ const ButSkills = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'butskills' });
   
   // Utiliser les traductions depuis le fichier JSON
-  const skills = t('skills', { returnObjects: true });
+  const skills = t('skills', { returnObjects: true }) as SkillGroup[];
 
   return (
     <FromTopDiv className="min-h-screen w-full px-3 py-10">
