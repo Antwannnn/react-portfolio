@@ -55,7 +55,7 @@ const ButSkills = () => {
   return (
     <FromTopDiv className="min-h-screen w-full px-3 py-10">
       <div className="text-center mb-16">
-        <h1 className="text-5xl text-transparent bg-clip-text bg-gradient-to-r text-primary mb-4">
+        <h1 className="text-5xl  text-primary mb-4">
           {t('title')}
         </h1>
         <p className="text-xl text-secondary">
