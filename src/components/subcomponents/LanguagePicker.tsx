@@ -54,7 +54,7 @@ const LanguagePicker = ({ selectedCountryCode, setSelectedCountryCode } : {selec
             </button>
             <button
               id="us"
-              className="flex items-center p-2  bg-primary/10 rounded-md hover:bg-primary/25 duration-300"
+              className="flex items-center p-2 bg-primary/10 rounded-md hover:bg-primary/25 duration-300"
               onClick={() => {
                 changeLanguage("en", "US");
                 setShowDropdown(false);
@@ -62,16 +62,16 @@ const LanguagePicker = ({ selectedCountryCode, setSelectedCountryCode } : {selec
             >
               <ReactCountryFlag countryCode="US" svg />
             </button>
-            {/*<button
-              id="spanish"
-              className="flex items-center p-2 hover:bg-gray-200"
+            <button
+              id="es"
+              className="flex items-center p-2 bg-primary/10 rounded-md hover:bg-primary/25 duration-300"
               onClick={() => {
                 changeLanguage("es", "ES");
                 setShowDropdown(false);
               }}
             >
               <ReactCountryFlag countryCode="ES" svg />
-            </button>*/}
+            </button>
           </div>
         )}
       </div>

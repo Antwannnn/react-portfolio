@@ -1,0 +1,324 @@
+{
+  "navlinks": [
+    {
+      "id": "home",
+      "name": "Inicio",
+      "path": "/"
+    },
+    {
+      "id": "about",
+      "name": "Sobre mí",
+      "path": "/about"
+    },
+    {
+      "id": "skills",
+      "name": "Habilidades",
+      "path": "/skills"
+    },
+    {
+      "id": "butskills",
+      "name": "Habilidades BUT",
+      "path": "/butskills"
+    },
+    {
+      "id": "experiences",
+      "name": "Experiencias",
+      "path": "/experiences"
+    },
+    {
+      "id": "projects",
+      "name": "Proyectos",
+      "path": "/projects"
+    },
+    {
+      "id": "contact",
+      "name": "Contacto",
+      "path": "/contact"
+    }
+  ],
+  "home": {
+    "title": "Antoine Leboucher",
+    "description": "Estudiante en prácticas en IUT Informatique en Blagnac",
+    "button": "Más sobre mí",
+    "photo": "photo.jpg"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "desc-subtitle": "¿Quién soy?",
+    "desc": "Me llamo Antoine Leboucher, tengo 20 años y soy estudiante en el departamento de informática del IUT de Blagnac. Actualmente en mi tercer año, busco una formación en alternancia para preparar un máster en desarrollo full stack. Mi pasión por la informática y todo lo que la rodea se remonta a mi infancia, y hoy estoy muy feliz de poder hacer de mi pasión mi profesión.",
+    "timeline": {
+      "title": "Mi trayectoria",
+      "items": [
+        {
+          "date": "2015-2019",
+          "title": "Escuela Secundaria",
+          "place": "Collège Leo-Ferré Gourdon (46)"
+        },
+        {
+          "date": "2019-2022",
+          "title": "Bachillerato Especialidad Biología e Inglés",
+          "place": "Lycée Leo-Ferré Gourdon (46)"
+        },
+        {
+          "date": "2022-2025",
+          "title": "Grado en Informática",
+          "place": "IUT de Blagnac (31)"
+        }
+      ]
+    }
+  },
+  "skills": {
+    "title": "Mis habilidades",
+    "desc": "Aquí están algunas de las habilidades que he adquirido durante mis estudios y proyectos personales.",
+    "items": [
+      {
+        "name": "HTML 5",
+        "level": 80,
+        "color": "orange",
+        "icon": "html.png"
+      },
+      {
+        "name": "Tailwind CSS",
+        "level": 80,
+        "color": "lightblue",
+        "icon": "tailwind.png"
+      },
+      {
+        "name": "JavaScript",
+        "level": 70,
+        "color": "yellow",
+        "icon": "javascript.png"
+      },
+      {
+        "name": "Typescript",
+        "level": 70,
+        "color": "blue",
+        "icon": "typescript.png"
+      },
+      {
+        "name": "React",
+        "level": 90,
+        "color": "lightblue",
+        "icon": "reactjs.png"
+      },
+      {
+        "name": "PHP",
+        "level": 60,
+        "color": "pink",
+        "icon": "php.png"
+      },
+      {
+        "name": "Java",
+        "level": 90,
+        "color": "orange",
+        "icon": "java.png"
+      },
+      {
+        "name": "Python",
+        "level": 30,
+        "color": "yellow",
+        "icon": "python.png"
+      },
+      {
+        "name": "C",
+        "level": 50,
+        "color": "blue",
+        "icon": "c.png"
+      },
+      {
+        "name": "git",
+        "level": 60,
+        "color": "orange",
+        "icon": "git.png"
+      },
+      {
+        "name": "Unreal Engine",
+        "level": 50,
+        "color": "pink",
+        "icon": "ue.png"
+      },
+      {
+        "name": "mySQL",
+        "level": 80,
+        "color": "yellow",
+        "icon": "mysql.png"
+      },
+      {
+        "name": "MongoDB",
+        "level": 30,
+        "color": "lightgreen",
+        "icon": "mongodb.png"
+      },
+      {
+        "name": "Node.js",
+        "level": 60,
+        "color": "lightgreen",
+        "icon": "nodejs.png"
+      },
+      {
+        "name": "Vue.js",
+        "level": 30,
+        "color": "lightgreen",
+        "icon": "vuejs.png"
+      },
+      {
+        "name": "Angular",
+        "level": 50,
+        "color": "orange",
+        "icon": "angular.png"
+      },
+      {
+        "name": "Docker",
+        "level": 50,
+        "color": "blue",
+        "icon": "docker.png"
+      },
+      {
+        "name": "Blender",
+        "level": 40,
+        "color": "orange",
+        "icon": "blender.png"
+      }
+    ]
+  },
+  "experiences": {
+    "title": "Experiencias",
+    "noexperiencedesc": "Sin experiencia profesional por el momento",
+    "noexperiencetext": "¡Depende de ti cambiar esto!",
+    "button": "Contáctame",
+    "items": [
+      {
+        "title": "Prácticas de 2º año BUT",
+        "date": "Febrero 2024 - Abril 2024",
+        "place": "Ministerio de las Fuerzas Armadas",
+        "link": "https://www.defense.gouv.fr/",
+        "image": "mda.jpg"
+      },
+      {
+        "title": "Formación en alternancia - Desarrollo de Software y Análisis de Señales Satelitales Desconocidas",
+        "date": "Septiembre 2024 - Septiembre 2025",
+        "place": "Ministerio de las Fuerzas Armadas",
+        "link": "https://www.defense.gouv.fr/",
+        "image": "mda.jpg"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Aquí hay algunos de los proyectos en los que he trabajado durante mis estudios y experiencias profesionales, así como proyectos personales.",
+    "items": [
+      {
+        "name": "E-Mcaffe",
+        "description": "Sitio web de comercio electrónico desarrollado con React, Typescript y Tailwind CSS. El sitio es completamente responsive y está alojado en Vercel.",
+        "link": "https://e-mcaffe.vercel.app",
+        "tags": [
+          {
+            "name": "react",
+            "color": "blue-tag"
+          },
+          {
+            "name": "typescript",
+            "color": "dark-blue-tag"
+          },
+          {
+            "name": "javascript",
+            "color": "yellow-tag"
+          },
+          {
+            "name": "tailwind",
+            "color": "blue-tag"
+          },
+          {
+            "name": "supabase",
+            "color": "green-tag"
+          }
+        ],
+        "image": "emcaffe.png",
+        "source_code_link": null
+      },
+      {
+        "name": "Portfolio Web",
+        "description": "Portfolio desarrollado con React, Typescript y Tailwind CSS. El sitio es responsive y está alojado en Vercel. ¡Este es el sitio web en el que te encuentras ahora!",
+        "link": "https://antoine-leboucher.fr",
+        "tags": [
+          {
+            "name": "react",
+            "color": "blue-tag"
+          },
+          {
+            "name": "typescript",
+            "color": "dark-blue-tag"
+          },
+          {
+            "name": "tailwind",
+            "color": "blue-tag"
+          },
+          {
+            "name": "framer-motion",
+            "color": "pink-tag"
+          }
+        ],
+        "image": "portfolio.png",
+        "source_code_link": "https://github.com/Antwannnn/react-portfolio"
+      },
+      {
+        "name": "Juego de Memoria",
+        "description": "Juego de memoria desarrollado con React y Typescript. El juego es responsive y está alojado en Vercel.",
+        "link": "https://memory-game-antwannnn.vercel.app",
+        "tags": [
+          {
+            "name": "react",
+            "color": "blue-tag"
+          },
+          {
+            "name": "typescript",
+            "color": "dark-blue-tag"
+          },
+          {
+            "name": "tailwind",
+            "color": "blue-tag"
+          }
+        ],
+        "image": "memory.png",
+        "source_code_link": "https://github.com/Antwannnn/memory-game"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contáctame",
+    "subtitle": "Si tienes alguna pregunta o te gustaría trabajar conmigo.",
+    "nameplaceholder": "Tu nombre",
+    "surnameplaceholder": "Tus apellidos",
+    "emailplaceholder": "tu.correo@email.aqui",
+    "messageplaceholder": "Tu mensaje",
+    "button": "Enviar"
+  },
+  "butskills": {
+    "title": "Habilidades BUT",
+    "subtitle": "Especialidad en Desarrollo de Aplicaciones",
+    "description": "Habilidades adquiridas durante el grado BUT en Informática",
+    "skills": [
+      {
+        "category": "Desarrollo",
+        "items": [
+          { "name": "Desarrollo", "description": "Desarrollar aplicaciones" },
+          { "name": "Optimización", "description": "Optimizar aplicaciones informáticas" }
+        ]
+      },
+      {
+        "category": "Administración",
+        "items": [
+          { "name": "Sistemas", "description": "Administrar sistemas informáticos complejos comunicantes" },
+          { "name": "Datos", "description": "Gestionar datos de información" }
+        ]
+      },
+      {
+        "category": "Gestión",
+        "items": [
+          { "name": "Proyecto", "description": "Dirigir un proyecto informático" },
+          { "name": "Equipo", "description": "Trabajar en un equipo informático" }
+        ]
+      }
+    ]
+  }
+}

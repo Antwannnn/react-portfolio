@@ -4,7 +4,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 
 import fr from "./locales/fr.json";
 import en from "./locales/en.json";
-//import es from "./locales/es/translation.json";
+import es from "./locales/es.json";
 
 // Configuration de i18next
 i18n
@@ -18,9 +18,9 @@ i18n
       fr: {
         translation: fr,
       },
-      /*es: {
+      es: {
         translation: es,
-      },*/
+      },
     },
     fallbackLng: "fr", // Langue par défaut si la langue choisie n'est pas disponible
     debug: true, 
