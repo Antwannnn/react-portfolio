@@ -372,10 +372,31 @@
         ]
       },
       {
-        "category": "Gérer",
+        "category": "Optimiser",
+        "items": [
+          { "name": "Performances", "description": "Optimiser les performances d'une application" },
+          { "name": "Sécurité", "description": "Sécuriser une application" }
+        ]
+      },
+      {
+        "category": "Gérer les données",
+        "items": [
+          { "name": "Gestion des données", "description": "Gérer les données de l'information" },
+          { "name": "Droit d'accès", "description": "Gérer les droits d'accès et d'exploitation des données" }
+        ]
+      },
+      {
+        "category": "Conduire un projet",
         "items": [
           { "name": "Projet", "description": "Conduire un projet informatique" },
           { "name": "Équipe", "description": "Travailler dans une équipe informatique" }
+        ]
+      },
+      {
+        "category": "Travailler en équipe",
+        "items": [
+          { "name": "Communication", "description": "Communiquer avec les autres membres de l'équipe" },
+          { "name": "Gestion de projet", "description": "Gérer un projet informatique" }
         ]
       }
     ]

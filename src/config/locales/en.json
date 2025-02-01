@@ -372,10 +372,31 @@
         ]
       },
       {
-        "category": "Management",
+        "category": "Optimize",
+        "items": [
+          { "name": "Performance", "description": "Optimize the performance of an application" },
+          { "name": "Security", "description": "Secure an application" }
+        ]
+      },
+      {
+        "category": "Manage data",
+        "items": [
+          { "name": "Manage data", "description": "Manage information data" },
+          { "name": "Access Rights", "description": "Manage access rights and exploitation rights of computer applications" }
+        ]
+      },
+      {
+        "category": "Lead a project",
         "items": [
           { "name": "Project", "description": "Lead IT projects" },
           { "name": "Team", "description": "Work in an IT team" }
+        ]
+      },
+      {
+        "category": "Teamwork",
+        "items": [
+          { "name": "Communication", "description": "Communicate with other team members" },
+          { "name": "Project Management", "description": "Manage IT projects" }
         ]
       }
     ]

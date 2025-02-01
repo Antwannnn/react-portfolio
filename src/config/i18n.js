@@ -6,10 +6,9 @@ import fr from "./locales/fr.json";
 import en from "./locales/en.json";
 import es from "./locales/es.json";
 
-// Configuration de i18next
 i18n
-  .use(LanguageDetector) // Détection de la langue du navigateur
-  .use(initReactI18next) // Liaison avec React
+  .use(LanguageDetector) 
+  .use(initReactI18next) 
   .init({
     resources: {
       en: {
@@ -22,7 +21,7 @@ i18n
         translation: es,
       },
     },
-    fallbackLng: "fr", // Langue par défaut si la langue choisie n'est pas disponible
+    fallbackLng: "fr",
     debug: true, 
     interpolation: {
       escapeValue: false,

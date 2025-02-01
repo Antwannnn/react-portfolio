@@ -313,10 +313,31 @@
         ]
       },
       {
+        "category": "Optimizar",
+        "items": [
+          { "name": "Optimizar", "description": "Optimizar las aplicaciones informáticas" },
+          { "name": "Seguridad", "description": "Segurizar las aplicaciones informáticas" }
+        ]
+      },
+      {
         "category": "Gestión",
+        "items": [
+          { "name": "Gestion", "description": "Gestionar las aplicaciones informáticas" },
+          { "name": "Derechos de acceso", "description": "Gestionar los derechos de acceso y explotación de las aplicaciones informáticas" }
+        ]
+      },
+      {
+        "category": "Conducir un proyecto",
         "items": [
           { "name": "Proyecto", "description": "Dirigir un proyecto informático" },
           { "name": "Equipo", "description": "Trabajar en un equipo informático" }
+        ]
+      },
+      {
+        "category": "Trabajar en equipo",
+        "items": [
+          { "name": "Communication", "description": "Comunicar con los otros miembros del equipo" },
+          { "name": "Gestión de proyectos", "description": "Gestionar los proyectos informáticos" }
         ]
       }
     ]
