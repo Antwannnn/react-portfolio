@@ -3,7 +3,7 @@ import { useNavigate, useMatch } from 'react-router-dom';
 import { motion, useAnimation } from 'framer-motion';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Bars3CenterLeftIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Bars3CenterLeftIcon, XMarkIcon, ArrowDownTrayIcon } from '@heroicons/react/24/outline';
 import logoWhite from '/assets/logowhite.png';
 import logoBlack from '/assets/logoblack.png';
 import LanguagePicker from './LanguagePicker';
@@ -149,6 +149,15 @@ const NavBar = () => {
     return () => observer.disconnect();
   }, []);
 
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/assets/cv.pdf'; // Assurez-vous que votre CV est dans le dossier public/assets
+    link.download = 'Antoine_Leboucher_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <>
       <button className="sm:hidden cursor-pointer z-30 fixed left-3 top-1 opacity-75" onClick={() => toggleMenu()}>
@@ -161,12 +170,19 @@ const NavBar = () => {
         variants={appearVariants}
         animate={appear}
       >
-        <nav className="flex h-full min-w-56 flex-col gap-5 sm:gap-10 items-center justify-start relative sm:fixed">
-          <div className="flex justify-center-center py-5 sm:py-10">
+        <nav className="flex h-full min-w-56 flex-col gap-10 items-center justify-start relative sm:fixed">
+          <div className="flex justify-center-center py-10">
             <NavLink path="/" className="opacity-70 hover:opacity-100 transition-opacity duration-300" onClick={() => { navigate("/"); if(isTabletOrMobile) { toggleMenu() } }}>
               <img className="w-[80px]" src={theme === 'dark' ? logoWhite : logoBlack} alt="logo" />
             </NavLink>
           </div>
+          <button
+            onClick={handleDownloadCV}
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary transition-all duration-300"
+          >
+            <ArrowDownTrayIcon className="w-5 h-5" />
+            <span>{t('download_cv')}</span>
+          </button>
           <ul className="flex flex-col w-full">
             {items.map((link) => (
               <li key={link.id} className="flex items-center w-full justify-center h-16">
