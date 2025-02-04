@@ -208,33 +208,122 @@
     "subtitle": "Aquí hay algunos de los proyectos en los que he trabajado durante mis estudios y experiencias profesionales, así como proyectos personales.",
     "items": [
       {
-        "name": "E-Mcaffe",
-        "description": "Sitio web de comercio electrónico desarrollado con React, Typescript y Tailwind CSS. El sitio es completamente responsive y está alojado en Vercel.",
-        "link": "https://e-mcaffe.vercel.app",
+        "name": "blader",
+        "description": "Blader es un sitio web de entrenamiento de dactilografía. El sitio no está terminado pero el código es open source y está disponible en mi github.",
         "tags": [
           {
             "name": "react",
             "color": "blue-tag"
           },
           {
-            "name": "typescript",
-            "color": "dark-blue-tag"
+            "name": "nextjs",
+            "color": "black-tag"
           },
           {
-            "name": "javascript",
-            "color": "yellow-tag"
+            "name": "typescript",
+            "color": "dark-blue-tag"
           },
           {
             "name": "tailwind",
             "color": "blue-tag"
           },
           {
-            "name": "supabase",
+            "name": "mongodb",
             "color": "green-tag"
+          },
+          {
+            "name": "framer-motion",
+            "color": "pink-tag"
           }
         ],
-        "image": "emcaffe.png",
-        "source_code_link": null
+        "image": "blader.png",
+        "source_code_link": "https://github.com/Antwannnn/blader"
+      },
+      {
+        "name": "Instalación VM Kali & Windows 7",
+        "description": "Instalación de Kali Linux como atacante y Windows 7 como víctima, en una máquina virtual con UTM. El objetivo es aprender pentesting.",
+        "tags": [
+          {
+            "name": "utm",
+            "color": "blue-tag"
+          },
+          {
+            "name": "kali",
+            "color": "green-tag"
+          },
+          {
+            "name": "windows",
+            "color": "blue-tag"
+          }
+        ],
+        "image": "installvm.png"
+      },
+      {
+        "name": "Comercio electrónico",
+        "description": "Sitio web de comercio electrónico para una empresa ficticia llamada \"Pages d'or\" que se especializa en la venta de libros. Desarrollado con PHP, Tailwind CSS y JavaScript, el sitio está alojado en un servidor del IUT de Blagnac.",
+        "link": "http://193.54.227.208/~saephp06/",
+        "tags": [
+          {
+            "name": "php",
+            "color": "purple-tag"
+          },
+          {
+            "name": "tailwind",
+            "color": "blue-tag"
+          },
+          {
+            "name": "javascript",
+            "color": "yellow-tag"
+          },
+          {
+            "name": "mysql",
+            "color": "orange-tag"
+          }
+        ],
+        "image": "e-commerce.png",
+        "source_code_link": ""
+      },
+      {
+        "name": "Agencia Bancaria",
+        "description": "Aplicación Java que permite gestionar las cuentas bancarias de los clientes de una agencia bancaria así como las cuentas de los empleados de la agencia.",
+        "link": null,
+        "tags": [
+          {
+            "name": "java", 
+            "color": "orange-tag"
+          },
+          {
+            "name": "javafx",
+            "color": "red-tag"
+          },
+          {
+            "name": "oracle-sql",
+            "color": "pink-tag"
+          }
+        ],
+        "image": "bank.png",
+        "source_code_link": "https://github.com/IUT-Blagnac/sae2023-bank-1b3"
+      },
+      {
+        "name": "Prototipo de juego de terror en 3D",
+        "description": "Prototipo de juego de terror en 3D desarrollado con el motor de juego Unreal Engine 4. Mecánicas básicas e interacciones con el entorno implementadas.",
+        "link": "https://drive.google.com/file/d/1N7xE_k6AQu7aGOEWx7CNY6airpYlPMW-/view?usp=drive_link",
+        "tags": [
+          {
+            "name": "c++",
+            "color": "dark-blue-tag"
+          },
+          {
+            "name": "unreal-engine-4",
+            "color": "purple-tag"
+          },
+          {
+            "name": "blueprint",
+            "color": "blue-tag"
+          }
+        ],
+        "image": "horrorgame.png",
+        "source_code_link": "https://github.com/Antwannnn/TheForgottenWords_SourceCode/tree/main"
       },
       {
         "name": "Portfolio Web",
@@ -281,6 +370,35 @@
         ],
         "image": "memory.png",
         "source_code_link": "https://github.com/Antwannnn/memory-game"
+      },
+      {
+        "name": "EMCaffe",
+        "description": "Sitio web de comercio electrónico desarrollado con React, Typescript y Tailwind CSS. El sitio es completamente responsive y está alojado en Vercel.",
+        "link": "https://e-mcaffe.vercel.app",
+        "tags": [
+          {
+            "name": "react",
+            "color": "blue-tag"
+          },
+          {
+            "name": "typescript",
+            "color": "dark-blue-tag"
+          },
+          {
+            "name": "javascript",
+            "color": "yellow-tag"
+          },
+          {
+            "name": "tailwind",
+            "color": "blue-tag"
+          },
+          {
+            "name": "supabase",
+            "color": "green-tag"
+          }
+        ],
+        "image": "emcaffe.png",
+        "source_code_link": null
       }
     ]
   },
@@ -303,6 +421,12 @@
         "items": [
           { "name": "Desarrollo", "description": "Desarrollar aplicaciones" },
           { "name": "Optimización", "description": "Optimizar aplicaciones informáticas" }
+        ],
+        "projects": [
+          { "name": "blader" },
+          { "name": "emcaffe" },
+          { "name": "Comercio electrónico" },
+          { "name": "Portfolio" }
         ]
       },
       {
@@ -310,6 +434,9 @@
         "items": [
           { "name": "Sistemas", "description": "Administrar sistemas informáticos complejos comunicantes" },
           { "name": "Datos", "description": "Gestionar datos de información" }
+        ],
+        "projects": [
+          { "name": "Instalación VM Kali & Windows 7" }
         ]
       },
       {
@@ -317,6 +444,11 @@
         "items": [
           { "name": "Optimizar", "description": "Optimizar las aplicaciones informáticas" },
           { "name": "Seguridad", "description": "Segurizar las aplicaciones informáticas" }
+        ],
+        "projects": [
+          { "name": "blader" },
+          { "name": "emcaffe" },
+          { "name": "Comercio electrónico" }
         ]
       },
       {
@@ -324,6 +456,10 @@
         "items": [
           { "name": "Gestion", "description": "Gestionar las aplicaciones informáticas" },
           { "name": "Derechos de acceso", "description": "Gestionar los derechos de acceso y explotación de las aplicaciones informáticas" }
+        ],
+        "projects": [
+          { "name": "emcaffe" },
+          { "name": "Comercio electrónico" }
         ]
       },
       {
@@ -331,6 +467,10 @@
         "items": [
           { "name": "Proyecto", "description": "Dirigir un proyecto informático" },
           { "name": "Equipo", "description": "Trabajar en un equipo informático" }
+        ],
+        "projects": [
+          { "name": "emcaffe" },
+          { "name": "Comercio electrónico" }
         ]
       },
       {
@@ -338,6 +478,10 @@
         "items": [
           { "name": "Communication", "description": "Comunicar con los otros miembros del equipo" },
           { "name": "Gestión de proyectos", "description": "Gestionar los proyectos informáticos" }
+        ],
+        "projects": [
+          { "name": "emcaffe" },
+          { "name": "Comercio electrónico" }
         ]
       }
     ]

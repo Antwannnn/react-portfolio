@@ -74,24 +74,32 @@
     color: var(--secondary)
 }
 
+.black-tag {
+    background: #000000;
+}
+
+.green-tag {
+    background: #3b923b;
+}
+
 .yellow-tag {
-    background: var(--accent);
+    background: #e4d84f;
 }
 
 .orange-tag {
-    background: var(--tertiary);
+    background: #f7834d;
 }
 
 .red-tag {
-    background: var(--accent);
+    background: #f33131;
 }
 
 .dark-blue-tag {
-    background: var(--background);
+    background: #4343f4;
 }
 
 .blue-tag {
-    background: var(--tertiary);
+    background: #24246c;
 }
 
 .purple-tag {
@@ -99,7 +107,7 @@
 }
 
 .pink-tag {
-    background: #ed3e9b;
+    background: #e75fa7;
 }
 
 textarea, input{

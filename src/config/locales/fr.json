@@ -208,6 +208,57 @@
     "subtitle": "Voici quelques-uns des projets que j'ai réalisés au cours de mes études et de mes expériences professionnelles mais également des projets personnels.",
     "items": [
       {
+        "name": "blader",
+        "description": "Blader est un projet de site web d'entraînement dactylographique. Le site n'est pas encore terminé mais le code est open source et disponible sur mon github.",
+        "tags": [
+          {
+            "name": "react",
+            "color": "blue-tag"
+          },
+          {
+            "name": "nextjs",
+            "color": "black-tag"
+          },
+          {
+            "name": "typescript",
+            "color": "dark-blue-tag"
+          },
+          {
+            "name": "tailwind",
+            "color": "blue-tag"
+          },
+          {
+            "name": "mongodb",
+            "color": "green-tag"
+          },
+          {
+            "name": "framer-motion",
+            "color": "pink-tag"
+          }
+        ],
+        "image": "blader.png",
+        "source_code_link": "https://github.com/Antwannnn/blader"
+      },
+      {
+        "name": "Installation VM Kali & Windows 7",
+        "description": "Installation de Kali Linux attaquante et Windows 7 victime, sur une machine virtuelle avec UTM. L'objectif est de pouvoir apprendre le pentesting.",
+        "tags": [
+          {
+            "name": "utm",
+            "color": "blue-tag"
+          },
+          {
+            "name": "kali",
+            "color": "green-tag"
+          },
+          {
+            "name": "windows",
+            "color": "blue-tag"
+          }
+        ],
+        "image": "installvm.png"
+      },
+      {
         "name": "Site E-commerce",
         "description": "Site e-commerce pour une entreprise fictive appelée \"Pages d'or\" spécialisée dans la vente de livres. Développé avec PHP, Tailwind CSS et Javascript le site est hébergé sur un serveur de l'IUT de Blagnac.",
         "link": "http://193.54.227.208/~saephp06/",
@@ -362,6 +413,12 @@
         "items": [
           { "name": "Développement", "description": "Réaliser un développement d'application" },
           { "name": "Optimisation", "description": "Optimiser des applications informatiques" }
+        ],
+        "projects": [
+          { "name": "blader" },
+          { "name": "emcaffe" },
+          { "name": "E-commerce" },
+          { "name": "Portfolio" }
         ]
       },
       {
@@ -369,6 +426,9 @@
         "items": [
           { "name": "Systèmes", "description": "Administrer des systèmes informatiques communicants complexes" },
           { "name": "Données", "description": "Gérer des données de l'information" }
+        ],
+        "projects": [
+          { "name": "Installation VM Kali & Windows 7"}
         ]
       },
       {
@@ -376,6 +436,11 @@
         "items": [
           { "name": "Performances", "description": "Optimiser les performances d'une application" },
           { "name": "Sécurité", "description": "Sécuriser une application" }
+        ],
+        "projects": [
+          { "name": "blader" },
+          { "name": "emcaffe" },
+          { "name": "E-commerce" }
         ]
       },
       {
@@ -383,6 +448,10 @@
         "items": [
           { "name": "Gestion des données", "description": "Gérer les données de l'information" },
           { "name": "Droit d'accès", "description": "Gérer les droits d'accès et d'exploitation des données" }
+        ],
+        "projects": [
+          { "name": "emcaffe" },
+          { "name": "E-commerce" }
         ]
       },
       {
@@ -390,6 +459,10 @@
         "items": [
           { "name": "Projet", "description": "Conduire un projet informatique" },
           { "name": "Équipe", "description": "Travailler dans une équipe informatique" }
+        ],
+        "projects": [
+          { "name": "emcaffe" },
+          { "name": "E-commerce" }
         ]
       },
       {
@@ -397,6 +470,10 @@
         "items": [
           { "name": "Communication", "description": "Communiquer avec les autres membres de l'équipe" },
           { "name": "Gestion de projet", "description": "Gérer un projet informatique" }
+        ],
+        "projects": [
+          { "name": "emcaffe" },
+          { "name": "E-commerce" }
         ]
       }
     ]

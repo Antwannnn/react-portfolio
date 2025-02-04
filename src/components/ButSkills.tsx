@@ -7,20 +7,22 @@ import { useMediaQuery } from 'react-responsive';
 interface SkillCardProps {
     category: string;
     items: { name: string; description: string }[];
+    projects?: { name: string }[];
     ownIndex: number;
 }
 
 interface SkillGroup {
     category: string;
     items: { name: string; description: string }[];
+    projects?: { name: string }[];
 }
 
-const SkillCard: React.FC<SkillCardProps> = ({ category, items, ownIndex }) => {
+const SkillCard: React.FC<SkillCardProps> = ({ category, items, projects, ownIndex }) => {
   const isMobile = useMediaQuery({ query: '(max-width: 640px)' });
   
   return (
     <motion.div
-      className="relative w-[300px] h-[400px] rounded-2xl p-6 backdrop-blur-md bg-background-secondary/20 hover:scale-105 transition-all duration-300 ease-in-out border-2 border-primary/0 hover:border-primary/50"
+      className="relative w-[300px] h-auto min-h-[400px] rounded-2xl p-6 backdrop-blur-md bg-background-secondary/20 hover:scale-105 transition-all duration-300 ease-in-out border-2 border-primary/0 hover:border-primary/50"
       transition={{
         duration: 0.3,
         ease: "easeInOut"
@@ -42,6 +44,27 @@ const SkillCard: React.FC<SkillCardProps> = ({ category, items, ownIndex }) => {
               <p className="text-sm text-primary/80">{skill.description}</p>
             </motion.div>
           ))}
+          
+          {projects && projects.length > 0 && (
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: items.length * 0.2 + ownIndex / 3 }}
+              className="mt-4"
+            >
+              <h4 className="text-lg font-semibold text-primary mb-2">Proyectos relacionados:</h4>
+              <div className="flex flex-wrap gap-2">
+                {projects.map((project, index) => (
+                  <span
+                    key={index}
+                    className="bg-primary/20 px-3 py-1 rounded-full text-xs font-semibold text-primary"
+                  >
+                    {project.name}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          )}
         </div>
       </div>
     </motion.div>

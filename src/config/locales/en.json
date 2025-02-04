@@ -208,6 +208,57 @@
     "subtitle": "Here are some of the projects I have worked on during my studies and professional experiences but also some personal projects.",
     "items": [
       {
+        "name": "blader",
+        "description": "Blader is a typing training website. The site is not yet finished but the code is open source and available on my github.",
+        "tags": [
+          {
+            "name": "react",
+            "color": "blue-tag"
+          },
+          {
+            "name": "nextjs",
+            "color": "black-tag"
+          },
+          {
+            "name": "typescript",
+            "color": "dark-blue-tag"
+          },
+          {
+            "name": "tailwind",
+            "color": "blue-tag"
+          },
+          {
+            "name": "mongodb",
+            "color": "green-tag"
+          },
+          {
+            "name": "framer-motion",
+            "color": "pink-tag"
+          }
+        ],
+        "image": "blader.png",
+        "source_code_link": "https://github.com/Antwannnn/blader"
+      },
+      {
+        "name": "VM Installation Kali & Windows 7",
+        "description": "Installation of Kali Linux as attacker and Windows 7 as victim, on a virtual machine with UTM. The goal is to learn pentesting.",
+        "tags": [
+          {
+            "name": "utm",
+            "color": "blue-tag"
+          },
+          {
+            "name": "kali",
+            "color": "green-tag"
+          },
+          {
+            "name": "windows",
+            "color": "blue-tag"
+          }
+        ],
+        "image": "installvm.png"
+      },
+      {
         "name": "E-commerce Site",
         "description": "E-commerce site for a fictional company called \"Pages d'or\" specializing in book sales. Developed with PHP, Tailwind CSS, and JavaScript, the site is hosted on a server at IUT Blagnac.",
         "link": "http://193.54.227.208/~saephp06/",
@@ -362,6 +413,12 @@
         "items": [
           { "name": "Development", "description": "Develop applications" },
           { "name": "Optimization", "description": "Optimize computer applications" }
+        ],
+        "projects": [
+          { "name": "blader" },
+          { "name": "emcaffe" },
+          { "name": "E-commerce" },
+          {"name": "Portfolio"}
         ]
       },
       {
@@ -369,6 +426,9 @@
         "items": [
           { "name": "Systems", "description": "Administrate complex communicating computer systems" },
           { "name": "Data", "description": "Manage information data" }
+        ],
+        "projects": [
+          { "name": "Installation VM Kali & Windows 7" }
         ]
       },
       {
@@ -376,6 +436,11 @@
         "items": [
           { "name": "Performance", "description": "Optimize the performance of an application" },
           { "name": "Security", "description": "Secure an application" }
+        ],
+        "projects": [
+          { "name": "blader" },
+          { "name": "emcaffe" },
+          { "name": "E-commerce" }
         ]
       },
       {
@@ -383,6 +448,10 @@
         "items": [
           { "name": "Manage data", "description": "Manage information data" },
           { "name": "Access Rights", "description": "Manage access rights and exploitation rights of computer applications" }
+        ],
+        "projects": [
+          { "name": "emcaffe" },
+          { "name": "E-commerce" }
         ]
       },
       {
@@ -390,6 +459,10 @@
         "items": [
           { "name": "Project", "description": "Lead IT projects" },
           { "name": "Team", "description": "Work in an IT team" }
+        ],
+        "projects": [
+          { "name": "emcaffe" },
+          { "name": "E-commerce" }
         ]
       },
       {
@@ -397,6 +470,10 @@
         "items": [
           { "name": "Communication", "description": "Communicate with other team members" },
           { "name": "Project Management", "description": "Manage IT projects" }
+        ],
+        "projects": [
+          { "name": "emcaffe" },
+          { "name": "E-commerce" }
         ]
       }
     ]
