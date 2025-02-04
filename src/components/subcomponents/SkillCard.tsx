@@ -44,14 +44,14 @@ const SkillCard: React.FC<SkillCardProps> = ({ tech = { name: 'None', img: './im
                     <div className="text-secondary opacity-75 text-center text-xl">
                         <h3>{tech.name}</h3>
                     </div>
-                    <div className="h-[3px] w-full bg-opacity-30 bg-[#383838]">
+                    {/* <div className="h-[3px] w-full bg-opacity-30 bg-[#383838]">
                         <motion.div
                             initial={isMobile ? 'visible' : 'hidden'}
                             animate={controls}
                             variants={ProgressBarVariants}
                             className={`level h-full opacity-100`} 
                             style={{ background: `${color}` }}></motion.div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </motion.div>
