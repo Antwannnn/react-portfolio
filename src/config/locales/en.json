@@ -40,7 +40,8 @@
     "title": "Antoine Leboucher",
     "description": "Student in an apprenticeship at IUT Informatique in Blagnac",
     "button": "More about me",
-    "photo": "photo.jpg"
+    "photo": "photo.jpg",
+    "download_cv": "Download CV"
   },
   "about": {
     "title": "About Me",
@@ -407,6 +408,7 @@
     "title": "BUT Skills",
     "subtitle": "Application Development Track",
     "description": "Skills acquired during the BUT Computer Science degree",
+    "related_projects": "Related Projects",
     "skills": [
       {
         "category": "Development",
@@ -477,6 +479,5 @@
         ]
       }
     ]
-  },
-  "download_cv": "Download CV"
+  }
 }

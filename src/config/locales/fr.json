@@ -40,7 +40,9 @@
     "title": "Antoine Leboucher",
     "description": "Etudiant en alternance en IUT Informatique à Blagnac",
     "button": "Plus sur moi",
-    "photo": "photo.jpg"
+    "photo": "photo.jpg",
+    "download_cv": "Télécharger CV"
+
   },
   "about": {
     "title": "À propos de moi",
@@ -407,6 +409,7 @@
     "title": "Compétences BUT",
     "subtitle": "Parcours Réalisation d'applications",
     "description": "Les compétences acquises durant le BUT Informatique",
+    "related_projects": "Projets liés",
     "skills": [
       {
         "category": "Réaliser",
@@ -477,6 +480,5 @@
         ]
       }
     ]
-  },
-  "download_cv": "Télécharger CV"
+  }
 }

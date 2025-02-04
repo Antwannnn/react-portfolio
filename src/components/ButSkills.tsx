@@ -7,6 +7,7 @@ import { useMediaQuery } from 'react-responsive';
 interface SkillCardProps {
     category: string;
     items: { name: string; description: string }[];
+    related_projects: string;
     projects?: { name: string }[];
     ownIndex: number;
 }
@@ -17,7 +18,7 @@ interface SkillGroup {
     projects?: { name: string }[];
 }
 
-const SkillCard: React.FC<SkillCardProps> = ({ category, items, projects, ownIndex }) => {
+const SkillCard: React.FC<SkillCardProps> = ({ category, items, related_projects, projects, ownIndex }) => {
   const isMobile = useMediaQuery({ query: '(max-width: 640px)' });
   
   return (
@@ -52,7 +53,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ category, items, projects, ownInd
               transition={{ delay: items.length * 0.2 + ownIndex / 3 }}
               className="mt-4"
             >
-              <h4 className="text-lg font-semibold text-primary mb-2">Proyectos relacionados:</h4>
+              <h4 className="text-lg font-semibold text-primary mb-2">{related_projects}</h4>
               <div className="flex flex-wrap gap-2">
                 {projects.map((project, index) => (
                   <span
@@ -95,7 +96,7 @@ const ButSkills = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.2 }}
           >
-            <SkillCard ownIndex={index} {...skillGroup} />
+            <SkillCard related_projects={t('related_projects')} ownIndex={index} {...skillGroup} />
           </motion.div>
         ))}
       </FromBottomDiv>

@@ -40,7 +40,8 @@
     "title": "Antoine Leboucher",
     "description": "Estudiante en prácticas en IUT Informatique en Blagnac",
     "button": "Más sobre mí",
-    "photo": "photo.jpg"
+    "photo": "photo.jpg",
+    "download_cv": "Descargar CV"
   },
   "about": {
     "title": "Sobre mí",
@@ -415,6 +416,7 @@
     "title": "Habilidades BUT",
     "subtitle": "Especialidad en Desarrollo de Aplicaciones",
     "description": "Habilidades adquiridas durante el grado BUT en Informática",
+    "related_projects": "Proyectos relacionados",
     "skills": [
       {
         "category": "Desarrollo",
@@ -485,6 +487,5 @@
         ]
       }
     ]
-  },
-  "download_cv": "Descargar CV"
+  }
 }
