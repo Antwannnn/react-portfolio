@@ -202,6 +202,13 @@
         "place": "Ministère des Armées",
         "link": "https://www.defense.gouv.fr/",
         "image": "mda.jpg"
+      },
+      {
+        "title": "Alternance - Développeur Full Stack",
+        "date": "Septembre 2025 - Aujourd'hui",
+        "place": "Infotel",
+        "link": "https://www.infotel.com/",
+        "image": "infotel.png"
       }
     ]
   },
@@ -209,6 +216,35 @@
     "title": "Projets",
     "subtitle": "Voici quelques-uns des projets que j'ai réalisés au cours de mes études et de mes expériences professionnelles mais également des projets personnels.",
     "items": [
+            {
+        "name": "Irregular Verbs Online",
+        "description": "Site web d'apprentissage des verbes irréguliers anglais. Entraînez-vous avec des quiz interactifs et suivez votre progression.",
+        "link": "https://irregularverbsonline.com/",
+        "tags": [
+          {
+            "name": "nextjs",
+            "color": "black-tag"
+          },
+          {
+            "name": "supabase",
+            "color": "green-tag"
+          },
+          {
+            "name": "react",
+            "color": "blue-tag"
+          },
+          {
+            "name": "typescript",
+            "color": "dark-blue-tag"
+          },
+          {
+            "name": "tailwind",
+            "color": "blue-tag"
+          }
+        ],
+        "image": "irregularverbsonline.png",
+        "source_code_link": null
+      },
       {
         "name": "blader",
         "description": "Blader est un projet de site web d'entraînement dactylographique. Le site n'est pas encore terminé mais le code est open source et disponible sur mon github.",
